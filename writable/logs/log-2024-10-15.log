@@ -1,0 +1,85 @@
+CRITICAL - 2024-10-15 12:05:59 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-10-15 12:06:00 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-10-15 12:08:51 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-10-15 12:14:35 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-10-15 12:14:37 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-10-15 10:16:08 --> Class "Locale" not found
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 SYSTEMPATH\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(null, null, null)
+ 2 SYSTEMPATH\Debug\Toolbar.php(380): CodeIgniter\I18n\Time::now()
+ 3 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 4 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 5 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('/', 'after')
+ 6 SYSTEMPATH\CodeIgniter.php(372): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-15 10:16:11 --> Class "Locale" not found
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 SYSTEMPATH\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(null, null, null)
+ 2 SYSTEMPATH\Debug\Toolbar.php(380): CodeIgniter\I18n\Time::now()
+ 3 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 4 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 5 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('/', 'after')
+ 6 SYSTEMPATH\CodeIgniter.php(372): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-15 10:16:33 --> Class "Locale" not found
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 SYSTEMPATH\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(null, null, null)
+ 2 SYSTEMPATH\Debug\Toolbar.php(380): CodeIgniter\I18n\Time::now()
+ 3 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 4 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 5 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('/', 'after')
+ 6 SYSTEMPATH\CodeIgniter.php(372): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-15 10:16:34 --> Class "Locale" not found
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 SYSTEMPATH\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(null, null, null)
+ 2 SYSTEMPATH\Debug\Toolbar.php(380): CodeIgniter\I18n\Time::now()
+ 3 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 4 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 5 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('/', 'after')
+ 6 SYSTEMPATH\CodeIgniter.php(372): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-15 10:16:36 --> Class "Locale" not found
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 SYSTEMPATH\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(null, null, null)
+ 2 SYSTEMPATH\Debug\Toolbar.php(380): CodeIgniter\I18n\Time::now()
+ 3 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 4 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 5 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('/', 'after')
+ 6 SYSTEMPATH\CodeIgniter.php(372): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-15 12:16:50 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-10-15 12:16:51 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-10-15 12:16:51 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-10-15 12:20:04 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-10-15 12:20:13 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+INFO - 2024-10-15 10:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-15 10:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-15 10:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-15 10:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-15 10:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-15 10:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-15 10:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-15 10:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-15 10:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-15 10:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

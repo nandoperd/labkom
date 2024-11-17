@@ -1,0 +1,1691 @@
+INFO - 2023-05-30 01:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 01:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 01:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 01:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 01:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 01:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 01:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 01:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 01:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 02:05:40 --> syntax error, unexpected token "=", expecting ")"
+in APPPATH\Controllers\Data.php on line 68.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('data/edit/24')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('data/edit/24')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('data/edit/24')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 02:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 02:14:20 --> Cannot access offset of type string on string
+in APPPATH\Views\data\v_edit.php on line 138.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('data/v_edit', [], true)
+ 4 APPPATH\Controllers\Data.php(30): view('data/v_edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->edit('24')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 02:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 02:17:17 --> Cannot access offset of type string on string
+in APPPATH\Views\data\v_edit.php on line 137.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('data/v_edit', [], true)
+ 4 APPPATH\Controllers\Data.php(30): view('data/v_edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->edit('24')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 02:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 02:17:19 --> Cannot access offset of type string on string
+in APPPATH\Views\data\v_edit.php on line 137.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('data/v_edit', [], true)
+ 4 APPPATH\Controllers\Data.php(30): view('data/v_edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->edit('24')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 02:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 02:17:20 --> Cannot access offset of type string on string
+in APPPATH\Views\data\v_edit.php on line 137.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('data/v_edit', [], true)
+ 4 APPPATH\Controllers\Data.php(30): view('data/v_edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->edit('24')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 02:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 02:18:02 --> Undefined variable $value
+in APPPATH\Views\data\v_edit.php on line 136.
+ 1 APPPATH\Views\data\v_edit.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'C:\\xampp\\htdocs\\pegadaian\\app\\Views\\data\\v_edit.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pegadaian\\app\\Views\\data\\v_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('data/v_edit', [], true)
+ 5 APPPATH\Controllers\Data.php(30): view('data/v_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->edit('24')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 02:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 02:18:03 --> Undefined variable $value
+in APPPATH\Views\data\v_edit.php on line 136.
+ 1 APPPATH\Views\data\v_edit.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'C:\\xampp\\htdocs\\pegadaian\\app\\Views\\data\\v_edit.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pegadaian\\app\\Views\\data\\v_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('data/v_edit', [], true)
+ 5 APPPATH\Controllers\Data.php(30): view('data/v_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->edit('24')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 02:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 02:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 03:04:23 --> Invalid file: "data.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('data', [], true)
+ 3 APPPATH\Controllers\Data.php(30): view('data', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->edit('24')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 03:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 03:04:39 --> Cannot access offset of type string on string
+in APPPATH\Views\data\v_index.php on line 130.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('data/v_index', [], true)
+ 4 APPPATH\Controllers\Data.php(30): view('data/v_index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->edit('24')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 03:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 03:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:33:55 --> Call to undefined method App\Controllers\Qrcode::create()
+in APPPATH\Controllers\Qrcode.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:06 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:07 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:07 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:07 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:07 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:10 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:11 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:11 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:11 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:11 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:11 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:12 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:12 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:12 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:12 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:12 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:13 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:13 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:13 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:13 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:13 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:13 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:14 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:14 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:37:14 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 04:38:54 --> syntax error, unexpected single-quoted string "/logo.png", expecting ")"
+in APPPATH\Controllers\Qrcode.php on line 38.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('qrcode')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('qrcode')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('qrcode')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:39:09 --> Call to undefined method Endroid\QrCode\Logo\Logo::resize()
+in APPPATH\Controllers\Qrcode.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:39:15 --> Call to undefined method Endroid\QrCode\Writer\Result\PngResult::writeString()
+in APPPATH\Controllers\Qrcode.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:39:17 --> Call to undefined method Endroid\QrCode\Writer\Result\PngResult::writeString()
+in APPPATH\Controllers\Qrcode.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:39:29 --> Undefined variable $result
+in APPPATH\Controllers\Qrcode.php on line 48.
+ 1 APPPATH\Controllers\Qrcode.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\pegadaian\\app\\Controllers\\Qrcode.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:39:37 --> Undefined variable $result
+in APPPATH\Controllers\Qrcode.php on line 49.
+ 1 APPPATH\Controllers\Qrcode.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\pegadaian\\app\\Controllers\\Qrcode.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrcode->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrcode))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-30 04:39:45 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH\Debug\Toolbar.php on line 416.
+ 1 SYSTEMPATH\Debug\Toolbar.php(416): strpos(null, '<head>')
+ 2 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('qrcode', 'after')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-30 04:39:54 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH\Debug\Toolbar.php on line 416.
+ 1 SYSTEMPATH\Debug\Toolbar.php(416): strpos(null, '<head>')
+ 2 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('qrcode', 'after')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:42:13 --> Cannot declare class App\Controllers\Qrcode because the name is already in use
+in APPPATH\Controllers\Qrcode.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-05-30 04:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:43:20 --> Invalid data at path "C:\xampp\htdocs\pegadaian\app\Controllers/assets/symfony.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\Qrbarcode.php(39): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Qrbarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qrbarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:44:45 --> Invalid data at path "C:\xampp\htdocs\pegadaian\public\/logo.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:44:46 --> Invalid data at path "C:\xampp\htdocs\pegadaian\public\/logo.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:44:47 --> Invalid data at path "C:\xampp\htdocs\pegadaian\public\/logo.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:44:53 --> Invalid data at path "C:\xampp\htdocs\pegadaian\public\/logo.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:44:54 --> Invalid data at path "C:\xampp\htdocs\pegadaian\public\/logo.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:44:56 --> Invalid data at path "C:\xampp\htdocs\pegadaian\public\/logo.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:44:57 --> Invalid data at path "C:\xampp\htdocs\pegadaian\public\/logo.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:45:23 --> Undefined variable $logo
+in APPPATH\Controllers\QrBarcode.php on line 41.
+ 1 APPPATH\Controllers\QrBarcode.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logo', 'C:\\xampp\\htdocs\\pegadaian\\app\\Controllers\\QrBarcode.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:45:24 --> Undefined variable $logo
+in APPPATH\Controllers\QrBarcode.php on line 41.
+ 1 APPPATH\Controllers\QrBarcode.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logo', 'C:\\xampp\\htdocs\\pegadaian\\app\\Controllers\\QrBarcode.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:45:32 --> Endroid\QrCode\Writer\PngWriter::write(): Argument #2 ($logo) must be of type ?Endroid\QrCode\Logo\LogoInterface, Endroid\QrCode\Label\Label given, called in C:\xampp\htdocs\pegadaian\app\Controllers\QrBarcode.php on line 41
+in VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php on line 18.
+ 1 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Label\Label))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:45:35 --> Endroid\QrCode\Writer\PngWriter::write(): Argument #2 ($logo) must be of type ?Endroid\QrCode\Logo\LogoInterface, Endroid\QrCode\Label\Label given, called in C:\xampp\htdocs\pegadaian\app\Controllers\QrBarcode.php on line 41
+in VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php on line 18.
+ 1 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Label\Label))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:46:15 --> Invalid data at path "C:\xampp\htdocs\pegadaian\writable\/uploads/logo.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:46:17 --> Invalid data at path "C:\xampp\htdocs\pegadaian\writable\/uploads/logo.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:46:29 --> Invalid data at path "C:\xampp\htdocs\pegadaian\writable\/img/logo.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:46:42 --> Unable to parse image data at path "http://localhost/pegadaian/public//img/logo.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 49.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:46:50 --> Unable to parse image data at path "http://localhost/pegadaian/public/img/logo.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 49.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:46:50 --> Unable to parse image data at path "http://localhost/pegadaian/public/img/logo.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 49.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:47:05 --> Unable to parse image data at path "http://localhost/pegadaian/public/img/nyoba.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 49.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(41): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:48:12 --> Unable to parse image data at path "http://localhost/pegadaian/public/img/nyoba.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 49.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:48:13 --> Unable to parse image data at path "http://localhost/pegadaian/public/img/nyoba.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 49.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:48:14 --> Unable to parse image data at path "http://localhost/pegadaian/public/img/nyoba.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 49.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:48:15 --> Unable to parse image data at path "http://localhost/pegadaian/public/img/nyoba.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 49.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:48:15 --> Unable to parse image data at path "http://localhost/pegadaian/public/img/nyoba.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 49.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:56:52 --> Unable to parse image data at path "http://localhost/pegadaian/public/img/nyoba.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 49.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:56:54 --> Unable to parse image data at path "http://localhost/pegadaian/public/img/nyoba.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 49.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 04:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 04:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 04:56:56 --> Unable to parse image data at path "http://localhost/pegadaian/public/img/nyoba.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 49.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 04:59:11 --> Class "BaseController" not found
+in APPPATH\Controllers\QrBarcode.php on line 13.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('qrbarcode')
+ 3 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('qrbarcode')
+ 4 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('qrbarcode')
+ 5 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 05:00:25 --> Class "BaseController" not found
+in APPPATH\Controllers\QrBarcode.php on line 13.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('qrbarcode')
+ 3 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('qrbarcode')
+ 4 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('qrbarcode')
+ 5 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 05:00:26 --> Class "BaseController" not found
+in APPPATH\Controllers\QrBarcode.php on line 13.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('qrbarcode')
+ 3 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('qrbarcode')
+ 4 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('qrbarcode')
+ 5 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 05:00:26 --> Class "BaseController" not found
+in APPPATH\Controllers\QrBarcode.php on line 13.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('qrbarcode')
+ 3 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('qrbarcode')
+ 4 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('qrbarcode')
+ 5 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 05:00:27 --> Class "BaseController" not found
+in APPPATH\Controllers\QrBarcode.php on line 13.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('qrbarcode')
+ 3 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('qrbarcode')
+ 4 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('qrbarcode')
+ 5 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 05:00:27 --> Class "BaseController" not found
+in APPPATH\Controllers\QrBarcode.php on line 13.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('qrbarcode')
+ 3 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('qrbarcode')
+ 4 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('qrbarcode')
+ 5 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 05:00:27 --> Class "BaseController" not found
+in APPPATH\Controllers\QrBarcode.php on line 13.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('qrbarcode')
+ 3 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('qrbarcode')
+ 4 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('qrbarcode')
+ 5 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 05:00:30 --> Class "BaseController" not found
+in APPPATH\Controllers\QrBarcode.php on line 13.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('qrbarcode')
+ 3 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('qrbarcode')
+ 4 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('qrbarcode')
+ 5 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 05:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 05:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 05:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 05:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 05:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 05:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 05:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:03:40 --> Invalid data at path "C:\xampp\htdocs\pegadaian\app\Controllers/assets/symfony.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:04:41 --> Invalid data at path "C:\xampp\htdocs\pegadaian\app\Controllers/img/cg.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:04:43 --> Invalid data at path "C:\xampp\htdocs\pegadaian\app\Controllers/img/cg.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:04:43 --> Invalid data at path "C:\xampp\htdocs\pegadaian\app\Controllers/img/cg.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:04:44 --> Invalid data at path "C:\xampp\htdocs\pegadaian\app\Controllers/img/cg.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:04:44 --> Invalid data at path "C:\xampp\htdocs\pegadaian\app\Controllers/img/cg.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\QrBarcode.php(40): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 05:05:19 --> syntax error, unexpected single-quoted string "img/cg.png", expecting ")"
+in APPPATH\Controllers\QrBarcode.php on line 33.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('qrbarcode')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('qrbarcode')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('qrbarcode')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 05:05:47 --> syntax error, unexpected single-quoted string "img/cg.png", expecting ")"
+in APPPATH\Controllers\QrBarcode.php on line 33.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('qrbarcode')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('qrbarcode')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('qrbarcode')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 05:06:25 --> syntax error, unexpected token "->"
+in APPPATH\Controllers\QrBarcode.php on line 34.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('qrbarcode')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('qrbarcode')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('qrbarcode')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:06:42 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(44): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:06:43 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(44): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:06:43 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(44): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:06:44 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(44): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:06:44 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(44): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:06:44 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(44): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:06:44 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(44): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:06:44 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(44): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:06:44 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(44): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:06:45 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(44): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:06:45 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(44): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 05:06:48 --> syntax error, unexpected token "->"
+in APPPATH\Controllers\QrBarcode.php on line 34.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('qrbarcode')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('qrbarcode')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('qrbarcode')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:07:55 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(45): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:07:57 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(45): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:07:57 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(45): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:07:59 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(45): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 05:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 05:08:34 --> Invalid file: "qr_barcode.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('qr_barcode.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('qr_barcode', [], true)
+ 3 APPPATH\Controllers\QrBarcode.php(47): view('qr_barcode', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:14:56 --> Please install "khanamiryan/qrcode-detector-decoder" or disable image validation
+in VENDORPATH\endroid\qr-code\src\Exception\ValidationException.php on line 16.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(197): Endroid\QrCode\Exception\ValidationException::createForMissingPackage('khanamiryan/qrcode-detector-decoder')
+ 2 APPPATH\Controllers\QrBarcode.php(45): Endroid\QrCode\Writer\AbstractGdWriter->validateResult(Object(Endroid\QrCode\Writer\Result\PngResult), 'Life is too short to be generating QR codes')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:15:21 --> Invalid file: "qr_barcode.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('qr_barcode.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('qr_barcode', [], true)
+ 3 APPPATH\Controllers\QrBarcode.php(55): view('qr_barcode', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:15:37 --> Invalid file: "qrbarcode.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('qrbarcode.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('qrbarcode', [], true)
+ 3 APPPATH\Controllers\QrBarcode.php(55): view('qrbarcode', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\QrBarcode->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrBarcode))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-30 06:16:01 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH\Debug\Toolbar.php on line 416.
+ 1 SYSTEMPATH\Debug\Toolbar.php(416): strpos(null, '<head>')
+ 2 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('qrbarcode', 'after')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:35:42 --> Call to undefined method Endroid\QrCode\Writer\PngWriter::writeFile()
+in APPPATH\Controllers\BuatQrcode.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BuatQrcode->index('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuatQrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:36:53 --> Class "Endroid\QrCode\Writer\FileWriterInterface" not found
+in APPPATH\Controllers\BuatQrcode.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BuatQrcode->index('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuatQrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:36:57 --> Class "Endroid\QrCode\Writer\FileWriterInterface" not found
+in APPPATH\Controllers\BuatQrcode.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BuatQrcode->index('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuatQrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:37:45 --> Call to undefined method App\Controllers\BuatQrcode::create()
+in APPPATH\Controllers\BuatQrcode.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BuatQrcode->index('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuatQrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:38:12 --> Call to undefined method App\Controllers\QrBarcode::create()
+in APPPATH\Controllers\BuatQrcode.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BuatQrcode->index('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuatQrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:38:13 --> Call to undefined method App\Controllers\QrBarcode::create()
+in APPPATH\Controllers\BuatQrcode.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BuatQrcode->index('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuatQrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:38:14 --> Call to undefined method App\Controllers\QrBarcode::create()
+in APPPATH\Controllers\BuatQrcode.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BuatQrcode->index('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuatQrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:38:14 --> Call to undefined method App\Controllers\QrBarcode::create()
+in APPPATH\Controllers\BuatQrcode.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BuatQrcode->index('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuatQrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:38:14 --> Call to undefined method App\Controllers\QrBarcode::create()
+in APPPATH\Controllers\BuatQrcode.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BuatQrcode->index('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuatQrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:38:15 --> Call to undefined method App\Controllers\QrBarcode::create()
+in APPPATH\Controllers\BuatQrcode.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BuatQrcode->index('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuatQrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:38:15 --> Call to undefined method App\Controllers\QrBarcode::create()
+in APPPATH\Controllers\BuatQrcode.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BuatQrcode->index('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuatQrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:38:15 --> Call to undefined method App\Controllers\QrBarcode::create()
+in APPPATH\Controllers\BuatQrcode.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BuatQrcode->index('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuatQrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:38:15 --> Call to undefined method App\Controllers\QrBarcode::create()
+in APPPATH\Controllers\BuatQrcode.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BuatQrcode->index('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuatQrcode))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 06:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:42:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 06:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 06:57:30 --> Call to undefined method Endroid\QrCode\QrCode::writeFile()
+in APPPATH\Controllers\Data.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 07:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 07:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:00:20 --> Call to undefined method Endroid\QrCode\QrCode::writeString()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:25 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:27 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:28 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:28 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:28 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:28 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:29 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:29 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:29 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:29 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:29 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:30 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:30 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:30 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:31 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:31 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:31 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:31 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:31 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:32 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:32 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:32 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:01:32 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:02:30 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:02:31 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 07:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 07:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:02:35 --> Call to undefined method Endroid\QrCode\QrCode::get()
+in APPPATH\Controllers\Data.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:03:40 --> Call to undefined method Endroid\QrCode\QrCode::writeString()
+in APPPATH\Controllers\Data.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:03:40 --> Call to undefined method Endroid\QrCode\QrCode::writeString()
+in APPPATH\Controllers\Data.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:03:41 --> Call to undefined method Endroid\QrCode\QrCode::writeString()
+in APPPATH\Controllers\Data.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 07:03:41 --> Call to undefined method Endroid\QrCode\QrCode::writeString()
+in APPPATH\Controllers\Data.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 07:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 07:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 07:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 07:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 07:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 08:45:26 --> Call to undefined method Endroid\QrCode\QrCode::writeString()
+in APPPATH\Controllers\Data.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 09:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 09:05:54 --> Call to undefined method Endroid\QrCode\QrCode::writeString()
+in APPPATH\Controllers\Data.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 09:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 09:08:32 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Data.php on line 112.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('data')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('data')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('data')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 09:08:33 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Data.php on line 112.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('data')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('data')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('data')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 09:08:35 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Data.php on line 112.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('data')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('data')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('data')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 09:12:22 --> Cannot use Endroid\QrCode\Writer\PngWriter as PngWriter because the name is already in use
+in APPPATH\Controllers\Data.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-05-30 09:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 09:12:27 --> Cannot use Endroid\QrCode\Writer\PngWriter as PngWriter because the name is already in use
+in APPPATH\Controllers\Data.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-05-30 09:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 09:13:00 --> file_put_contents(C:\xampp\htdocs\pegadaian\writable\qrcode/00013.png): Failed to open stream: No such file or directory
+in VENDORPATH\endroid\qr-code\src\Writer\Result\AbstractResult.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(C:\\xampp\\htdocs\\pegadaian\\writable\\qrcode/00013.png): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\pegadaian\\vendor\\endroid\\qr-code\\src\\Writer\\Result\\AbstractResult.php', 29)
+ 2 VENDORPATH\endroid\qr-code\src\Writer\Result\AbstractResult.php(29): file_put_contents('C:\\xampp\\htdocs\\pegadaian\\writable\\qrcode/00013.png', '‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '@' . "\0" . '' . "\0" . ']' . "\0" . '' . "\0" . '' . "\0" . 'ıº#¸' . "\0" . '' . "\0" . '' . "\0" . '	pHYs' . "\0" . '' . "\0" . 'Ä' . "\0" . '' . "\0" . 'Ä•+' . "\0" . '' . "\0" . 'ÏIDATxœíİy|õıÇñÏ\\{es‘B	W¸ˆ"áP@E¬rJ«…j[Z[J©w‘¢µXÑ*Z*´h/.+ğk)‚‚•CäH8r’k³÷ÌüşØ˜„@ÂBf³ùlŞÏ‡İ9v³/fwf¾;‚®ë' . "\0" . '<‰á^' . "\0" . '¸r€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`Lò~‚ „t="C(F†ÿÌ¿ôPü6Ã»ôÈäó‰-0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0ìh¤àEŞµZ¸Œ	ï£PÀké’°`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'ÆŒ¼ğò	ïH.W\'
+Å•™B¡Õ¾–°`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'ÆÂ9©5ÅÈ¡Pˆ¼«ElCÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1ŒFjéB1n)¼óaÀ`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ…s4Æ¯«5?Ÿ­ö±cÀ`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ?)ø«é´f¸Q0ğZº$lCÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1ËÀ”Šq6¡·Š¥ƒ°`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ‚Ş«Ô„wœMkÖšG8±¸Ö¶À' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À˜Æe‡w¬Iät©§h!9ŠD3	‘®’æ%µŠT7‘~Yó—c¡}æ›gÂ0¨Êå#k²w%{™“H"ÉB‚LØC~ùÊÉq”*sÊ^»M‘D½d/œãC±`1†“]Ï*—ï“¹¯ıÉöÃ$Û/=GÕuãu\'ì4åæÎm¢‚\\…÷wa[`†¬§Ç§nü,wÙê_(t{ÕËZYº¥ÅÍ›–y×­]£m¦Ëš¶‰°px4}=ÏW=»bÿŠuÙeï¯†Í"ß>,í©vO»â™\\.l M\\Ïı9ÅóÛùß=g5#D¯NñK|Ó ÔæùTŒ€„€Ã£)ëùÕá¢™‹¶íË.1¤Ş€´ä¨—»uHZ34Œ€„ãÀÌìÏ)™¹hÛ#FÖKD¹ùU?[òÙ§ŸŸ6r¦z˜“‚çœ?îØ—]Š™çæ;æüqÇÁãçB1sÌ†Ç§.ykßg{ùÜ{QÇNW,xqWi…;T' . "\0" . '£!`6>Ù‘»b]vèêøôó3¯xDõbÀ ˜‡r‡çÙ¿íoÊ£ yıÚkïÊ+ª
+õ‚À˜‡·úß¡¢æYÖ‰3•o¯ÏÁF˜Ì@•Ë·fË	¯_kÅi:­Úx4¿aŒÌy£R‚ªã–Ö”1÷’ç9D‚@$Ö„ê­Kí­:éTÿÖzNåUîÜŸçÍ]Cq„3¼GwC1Ï01Æh$¢3H²5r»(RûÊºZ˜!$ÅÉŸşíYß;µƒ§"’$ê˜Dı3ÄŞi/{<Z^¡ºó(í:¬klÔİ^õÓ/ÎŒÑ)„€9°gĞà‡Y¢)CèÇ£M%HÓtÄ!=¥=\'İOëQQ4c”8e˜’#
+i:	‚$’¶×¿ûˆ¯‘eî>Xèö4vh	p‹\'šÈtUƒ7ŠtÇuôËIf›UÌ+Q7ïSŸÕIh—@NêŠDO–\'_¯H";«n?¤–
+ŠBõÇTµÑñKyE®ü—ñ…€[<9šäGí&ÅÑG›¢¬âébí¡×|ÇruU#"EÒuº¾‡0~ ,‹´ıˆÿÉøó‹ªß3ËRà›9ãtûq0©åCÀ-h&ÉÒĞ×dˆ]“%M£ÕÛüÙ§j£Ô4’%ºch5	•.ıÅ|yDD’HÕ»Q„Ævey}ê¹rœ’ÕÒ!àOª¿çb2Ûj’H—vğ„¿zô÷$™ÒÛÉDTâĞsÎÙí4ûVŠ¶D¤ë´âßÚ±¼wŠúUİéöõ  D0o‘¦‘÷‚ıM’LŠLDäõ“®YÍ4ú:KR¬ 
+¤ëô¯½®cyÍ»º`4œÈÑâééîn*vYÍBjRı_¥ßGN—NDñ6¡M4Q¹ƒş¸Ö÷Æf_0\'Y‰YLÒ•¯64ÜâiÒ<İ¸/Wp{uEÆQbìç½Vı´ÿ˜_\'Š·ÓÄ,Q‘Éë¡»ÔÿûZæ“"µ‰mğ³7´¸ÅSäopoğ¡Súg‡U(«»ô‡òğL!#YëÖNë×•,&ıãİZA©&KÂô[L³ï{w¢Ô½C› k³È)Wñ—VøÜâ©.ò–5å¢7V:éÅ|i	Ôµ½<²·<¤‡äpj‘¬³^òî=¦/ùÈ÷Û	JRŒ8sŒùî4‡K²’x‰S)‰¨M¬)9[à–·|:U ØŞİœ“G3ÿâ›4D»é11V’%Á¯	%eZ`äáæ/´Ü3‰YR¿®bb¬$+B•rOùŸÖN6¶Ô=“,f¼<Z:ã¿ÔË`†PÕcêB]g“dmä.¢HQŠ‰"»‰*}TYEN©ßŸê,Kd1“Õ&("¹|äsën/ù>Ë$‹/ÿvÈ}ã{EŞ—†ƒÁ‘w5.ßxHD¥•ÛçlÚùuA#÷Ñ4ªtR¥óâ·úUr8Éáv¡©m£FL½ÜõRxG8q·$ìÄb &Êtïí²Ô|™[³:¤¶Å,0’(L¾©sf—øæY\\bœåş	=¯ğKâ!!Ö:kr/›%ä{•dIøÉØî™]‚;Öá†€Ù˜6&ãö¡i¡^J¿‰³§öÂæ—üØˆ¶™˜5 W§¾‘NŠ·,™3(%	Ÿ~Ù@Àœôì¿ôáÁiÉ!	,ÎnzêÁ#´—D¼*ØÀ¯Š™›¥¾¼`hšÑ»ˆãì¦Å³¯›>¶»±³…PCÀÌH¢pë´å¿ÖµCŒQóLN°.™3è\'ã{˜?b&Ø3±Â«•ŸÈqQ‡O›ÿÂ®O??Ó”ï‹–%¡_Ä%sï—Ò<&>—…°]8¼ğE•V¸W¬ËY¶ú@n¾ã
+®£œ`6¦ë¼»3S’ìÍù¹©ù_šª¦ŸÊ«xó£#ë·ç~]@¢réi4ZJÜÄ‘fNìÙ-=®Ù6¼5°°‘ÂõÒT5½ğœ3%cÅô"[\'2Å‘h"A"A"úş;=4/ù*È•KGíß”–®ƒ½Ø@ØH-à¥) ‘KJ,I6MDDºŸT\'ù*É{t?‘Îeä¾¤`OÍã’PğÂûˆ"ïšC\\~›¶8ŒÀ`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ…óÚHÁc1æ1ì"o|Ukg°`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'ÆÂym¤Èyã
+.—ÅzâÚH' . "\0" . 'P0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ‚¼È»—Ñ3Áşq¹ŞRx×3Œ°`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'ÆŒ¼Èå
+†_Mç²´æ‘C¡xæqm$' . "\0" . '¨…€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'cáÔš…w”—qK1vIØ0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c\\Fä„b=¹\\ÇˆÅzbÀ`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ…s4—+ß´f,Fä\\Ö=ƒÇb=±`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'ÆŒüFx¯¢Ôš¯á
+¸6' . "\0" . 'ÔBÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1(à[`' . "\0" . 'Æ0' . "\0" . 'c€1À`0†€CÀ' . "\0" . 'Œ!`' . "\0" . 'Æ0' . "\0" . 'c€1À`7«=TöÂUá^TTj…Åšß¡la†€›Uöqõlîµ0À½óÊSíŞç~’¼µ÷¨â!ãJ¼^doã¯NÈšÛ­¿²ÒùşFOÎ	¿×G=ºHw·<4Ã&Šõ/*§iúÊµîw?v8â/«ĞR’¤CL¿šeëÚ±IOiÆĞ¢oÏT.””(¦´G5ÍºÇ–Ö^jÊœÃî`¶?û¸JD¹yjŸ%¨ç±Ö7Ùşq3JOçiDÔ!El\'î;äÿê€ãÃMÕ/Ç&\'Õösæ¬:á¾²ı‡üD+ôËTò
+Ô7ßq½·Ş½|IÌ·[š¸&w³Ø¬‚ß¯–hûŸ[î|ş¯ÎUËb\'ı ©s£›‡›ßZ#¢^á©¬væ¬:jÊ¹Òr}ì-æe¿Ni+‘Ó¥/zÁñîÇîº[àŠJmÔ”Ò“§Õş½å7şÛ«[õs¸õ3Ïô_Tä¨M_™%í "MÓ_]åšûXå¬ßVü`”Ùba|ùåN´†{">W›ıHEi¹>}ŠeÍkq5ñØ¬ÂâÑ¶&&%Ö>QóŸvœ<­ŞrƒiÛÚ65õÑ¨¡æ[æŞeìŠ‰¢ğà½¶³”ò
+ıë#~cg~ÅD\\Æ½e@ÀDD9\'ü·z­Z¼ úÂ[mÖÚk~¡ºr­KhéãÑ&Sıq\\l¨ÏÌî28\\»Ó¨¬\\›÷xEÿ[K2GL>÷ÊÛÎ§Ú°Å3jÊ¹«úš:Ôıï‰?9wĞ4ıoï¹n»§´}ÿÂÀ|Önp_8ŸüBuæüò«G·»¶pìŒÒÿóÆD_d§@ã³rºtSÇ‚N×]ÁTs­ ¢÷Ö»‡Œ+‰ïUØ{Tñ^rÿìE0¼…&"Ú°ÕCDw·&¶¹D›şíõùhâmæn›õ©+,Öˆ(µ]õ[ƒ=|“~Z–W È2õï#¹Ï7÷±Ê_zW½W3ÉÓËO.­êŞEzh†­¬B{ë]w•S¿kœ%£“4|)0Ï&;ş­š/ôï£x}ú/}wÿ¼üU‡>cjí{İÿ}í›p_YA‘Ö>YØW9zBqgiİ·$ÁÏêÂäT¹yêœG+–¯tuH{t‘öò?ş\\•¦ÑïæØxv9ÓA×ï™S¦¤çÿùuÇ%ïùÓ_—)éù‹_¬¼²Sü›§+¹C×!…Jzşwùşº?,(R“û(éùgüº®û|ZæÈ¢˜îùÛw{jîóà‚r%=ÿÓmîÀ_ôY:çg,r¹´ÀOö~ãµtÎ5µ¤îœ¾°üı®š¿nûÂ£¤çw\\¨ªÕS©ªÖ÷æ"%=ÿÑgkòšõ®ÀúìøÒü¬ªœš’ßqPáe­@`ªÀwíõ~øá\'.%=?¹oA#Ïd+·ĞDDÅç4"êœvéã4ùE5Ï~TMÓó
+Ô6¹GO;WRªÏ»ßØşê*Wöqõ±_Ø‡4ÕÜyñ»$Ñ[ïºİ¾Ë§ª4m‚¥f§Wß«•~™òç_ùê}ñÒÓ1ÆÔîÙ>È4èZåtvêLõ®¸•kİsÔa×)Oıºv[7é–Aı”zk{ÉY]TSÅÆ;>ls]ßê…mé"–”ê7&­ŞBiZíÿçöèDc¯ı¨iº¥saİûœÚ•X³ìÊtT\\÷¯ŠB³î±.YXĞ/½D4é¶ó)ÅÅŠS¥ãßV¿îE‘ˆH–Îû¤*Ë‚IdùâûŸ
+‹µƒÙş@Ş§¿Ó:§Õ.kæl—µşUS¦²Û„º‡ñˆ(-E:§9«Ö{3ßÚ `"¢Ä65¾­ˆ‹ëİS…)w˜Ş¾Ëw¶Ğ€mBà8°(Pr’˜*İ<ÜT÷_„GüDÔmXñ…¶O®~5jZ³ÁığÕg¡;åßóoÈ' . "\0" . 'S½Iöô½ùkíFwQ‰Şö*1ĞÓU½•œzÑ½KPÿ5>+c§2›"òpÌ7LDtM/åŸë<‡^úåĞ+CşğÏÑçİ³f×ÑøûJÏnõ6}}ê¾,ıé±h{Ô»Ácª’ÚNZ²Ğş›§£¦”NŸj-«Ğ–¾êZúøy»Ùy¦òÙWœ7f)~2fD–)±8ıåÿø v?pE¥FDm´/kVN50ÑèM¿{†ŞıØ½x½M\\coÉn¹Á´øÅª¿àzâá({TxŞ¼õÌæ¨×ö–ë~¾Pj;Él¦ØXaá’J“" ,šo¯ûéıïï»}Å9ëë²ßÇ44“NiòÁõôwjà8VC‚™•QSA]­úóC>=•á×+UN½æ' . "\0" . 'i]ûÖ}Í`êß[.)Õ½¶AEƒû›ˆhÅ÷û«.ÊíÖïÿUùC3l¾ÿİWI\'¿¸ê—ãêí{û×6/İ?­±³£zeHD´vcıM¢÷ü÷ÁÌêBW6Ô…€«-_e–¯tİ;·ü\\YõçX§KæåªÁcÏ=òLeÍ=ÿú\\¬ÕBK_sNûyYİ½ ‡rüÇO5Çg²~díŞEz{»ŞÉ[?óÔüù›¿ËM&¥±·¾š¦QàŒî€çÿZõŞúóZıÙt›ÙL«?r¯Û\\ûóG©Ü²ı¼‚ƒ™Õ•­' . "\0" . '4o¡«uí(oZ7é§eï|ä~ç#wF\'É%|}Ø¯ªÔ!Eœ6¡v+‘Ù]Ş´*şÎÊÖlğ¬ÙPÔ>Yìœ&åh\'rU]§±·˜“BûÏ¢É$¼õ|ì3Ëæ>VùÚ*çÀ¾Š×G»öø«ny7>p’Ff796FøÃKU»÷ùRÛ‰¢(ˆµ‰ºt”\'İf‰‰è‡¬ÿ\\çùÙÂŠıÇcR„í»½^/¾Á¼~Kí?)m¥Eóíó9&Ï,Ğ§ª};)p êÆ,å?;kß˜3«]ÙTP¶Àµ®ïg:üŸÄGçE]ÓKÎ+ĞrN¨½2äÇµsBİs‰(k€)û¿‰¿Ÿot­âpê_ìõ¹=ú¤ÛÌëVÄ­y-.˜]>M4 ²sÂ¼ûm6«ğŞzÏ®=¾«»ËëVÄê%"‹Exâ—v]§-Û½+şé~ó×ë«]Ï¾â|à7C‹óÑ˜‘æÕ‰íÑEŞ°Õ{ø¨ê–ı›¦­?àiî}QëÿwópÓ©3êÁlÿ¸[Ì_}’0õóîä¬ê¹²© .\\¸Y¼­dÔPÓ’…9ãÚXÿİå7£ì‰‡£jWøıú¡£şeo8ß^ã=Ãºôqì7ŠØG¦§w$%ˆu‡FÉ²Ğ§§rïV"ò·”AMĞT82•WèÅ¥Z½35M_ö†SêŸÅ|a\'VdúÕ¬¨{ç–÷SòãÉ–²(Ò‰\\uÕZ÷©3êŸŸŒ¾apc™¦µtH—¯t½·Ş“_ä´G	S¥1#Ms~Õ±ïïÖ‚ºpÄÊ`ÊºàÌgˆ0ØÀvb0†€CÀ' . "\0" . 'Œı?ú—“Âò€Œ' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 3 APPPATH\Controllers\Data.php(138): Endroid\QrCode\Writer\Result\AbstractResult->saveToFile('C:\\xampp\\htdocs\\pegadaian\\writable\\qrcode/00013.png')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Data->generateQrCode('00013')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-30 09:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 09:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
