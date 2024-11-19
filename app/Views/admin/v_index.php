@@ -144,7 +144,7 @@
             <div class="icon">
               <i class="fas fa-boxes"></i>
             </div>
-            <a href="<?= base_url('tsii') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?= base_url('kategori') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -158,7 +158,7 @@
             <div class="icon">
               <i class="fas fa-th-list"></i>
             </div>
-            <a href="<?= base_url('apn') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?= base_url('pengelolaan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -172,7 +172,7 @@
             <div class="icon">
               <i class="fas fa-tasks"></i>
             </div>
-            <a href="<?= base_url('ibu') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?= base_url('pengajuan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
       </div>
