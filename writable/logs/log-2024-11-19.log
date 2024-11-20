@@ -1,0 +1,158 @@
+INFO - 2024-11-19 15:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 15:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 16:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 16:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 16:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 16:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 16:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 16:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-19 16:36:05 --> Undefined variable $labkom
+in APPPATH\Views\pengajuan\v_index.php on line 224.
+ 1 APPPATH\Views\pengajuan\v_index.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $labkom', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php', 224)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pengajuan/v_index', [], true)
+ 5 APPPATH\Controllers\Pengajuan.php(25): view('pengajuan/v_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pengajuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-19 16:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-19 16:41:45 --> Undefined variable $labkom
+in APPPATH\Views\pengajuan\v_index.php on line 224.
+ 1 APPPATH\Views\pengajuan\v_index.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $labkom', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php', 224)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pengajuan/v_index', [], true)
+ 5 APPPATH\Controllers\Pengajuan.php(25): view('pengajuan/v_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pengajuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-19 16:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-19 16:41:47 --> Undefined variable $labkom
+in APPPATH\Views\pengajuan\v_index.php on line 224.
+ 1 APPPATH\Views\pengajuan\v_index.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $labkom', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php', 224)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pengajuan/v_index', [], true)
+ 5 APPPATH\Controllers\Pengajuan.php(25): view('pengajuan/v_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pengajuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-19 16:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-19 16:43:43 --> Undefined variable $labkom
+in APPPATH\Views\pengajuan\v_index.php on line 224.
+ 1 APPPATH\Views\pengajuan\v_index.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $labkom', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php', 224)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pengajuan/v_index', [], true)
+ 5 APPPATH\Controllers\Pengajuan.php(25): view('pengajuan/v_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pengajuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-19 16:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-19 16:43:45 --> Undefined variable $labkom
+in APPPATH\Views\pengajuan\v_index.php on line 224.
+ 1 APPPATH\Views\pengajuan\v_index.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $labkom', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php', 224)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pengajuan/v_index', [], true)
+ 5 APPPATH\Controllers\Pengajuan.php(25): view('pengajuan/v_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pengajuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-19 16:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-19 16:43:46 --> Undefined variable $labkom
+in APPPATH\Views\pengajuan\v_index.php on line 224.
+ 1 APPPATH\Views\pengajuan\v_index.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $labkom', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php', 224)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pengajuan/v_index', [], true)
+ 5 APPPATH\Controllers\Pengajuan.php(25): view('pengajuan/v_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pengajuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-19 16:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-19 16:45:03 --> Undefined variable $labkom
+in APPPATH\Views\pengajuan\v_index.php on line 224.
+ 1 APPPATH\Views\pengajuan\v_index.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $labkom', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php', 224)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pengajuan/v_index', [], true)
+ 5 APPPATH\Controllers\Pengajuan.php(25): view('pengajuan/v_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pengajuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-19 16:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-19 16:45:06 --> Undefined variable $labkom
+in APPPATH\Views\pengajuan\v_index.php on line 224.
+ 1 APPPATH\Views\pengajuan\v_index.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $labkom', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php', 224)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pengajuan/v_index', [], true)
+ 5 APPPATH\Controllers\Pengajuan.php(25): view('pengajuan/v_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pengajuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-19 16:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-19 16:45:07 --> Undefined variable $labkom
+in APPPATH\Views\pengajuan\v_index.php on line 224.
+ 1 APPPATH\Views\pengajuan\v_index.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $labkom', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php', 224)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\pengajuan\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pengajuan/v_index', [], true)
+ 5 APPPATH\Controllers\Pengajuan.php(25): view('pengajuan/v_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pengajuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-19 16:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-19 16:46:24 --> mysqli_sql_exception: Unknown column 'data_pengajuan_barang.some_column' in 'field list' in C:\xampp\htdocs\labkom\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\labkom\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_la...', 0)
+#1 C:\xampp\htdocs\labkom\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_la...')
+#2 C:\xampp\htdocs\labkom\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_la...')
+#3 C:\xampp\htdocs\labkom\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_la...', Array, false)
+#4 C:\xampp\htdocs\labkom\app\Models\ModelPengajuan.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\labkom\app\Controllers\Pengajuan.php(24): App\Models\ModelPengajuan->dataLabkom()
+#6 C:\xampp\htdocs\labkom\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Pengajuan->index()
+#7 C:\xampp\htdocs\labkom\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuan))
+#8 C:\xampp\htdocs\labkom\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\labkom\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-19 16:46:25 --> Unknown column 'data_pengajuan_barang.some_column' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_labkom`.`id`, `data_labkom`.`nama`, `data_pengajuan_barang`.`some_column`
+FROM `data_labkom`
+LEFT JOIN `data_pengajuan_barang` ON `data_pengajuan_barang`.`id_labkom` = `data_labkom`.`id`
+ORDER BY `data_labkom`.`nama` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_labkom`.`id`, `data_labkom`.`nama`, `data_pengajuan_barang`.`some_column`
+FROM `data_labkom`
+LEFT JOIN `data_pengajuan_barang` ON `data_pengajuan_barang`.`id_labkom` = `data_labkom`.`id`
+ORDER BY `data_labkom`.`nama` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_labkom`.`id`, `data_labkom`.`nama`, `data_pengajuan_barang`.`some_column`
+FROM `data_labkom`
+LEFT JOIN `data_pengajuan_barang` ON `data_pengajuan_barang`.`id_labkom` = `data_labkom`.`id`
+ORDER BY `data_labkom`.`nama` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_labkom`.`id`, `data_labkom`.`nama`, `data_pengajuan_barang`.`some_column`
+FROM `data_labkom`
+LEFT JOIN `data_pengajuan_barang` ON `data_pengajuan_barang`.`id_labkom` = `data_labkom`.`id`
+ORDER BY `data_labkom`.`nama` ASC', [], false)
+ 5 APPPATH\Models\ModelPengajuan.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pengajuan.php(24): App\Models\ModelPengajuan->dataLabkom()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pengajuan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-19 16:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 16:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 16:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 16:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 16:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

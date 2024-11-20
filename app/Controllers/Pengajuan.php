@@ -21,6 +21,8 @@ class Pengajuan extends BaseController
         $data = [
             'title' => 'Data Pengelolaan Barang',
             'd' => $this->ModelPengajuan->allData(),
+            'labkom' => $this->ModelPengajuan->dataLabkom(),
+            'kategori' => $this->ModelPengajuan->dataKategori()
         ];
         return view('pengajuan/v_index', $data);
     }
@@ -28,25 +30,70 @@ class Pengajuan extends BaseController
     public function add()
     {
         if ($this->validate([
-            'nama' => [
-                'label' => 'Nama Labkom',
+            'id_labkom' => [
+                'label' => 'Labkom',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Wajib diisi!',
                 ]
             ],
-            'kepala_lab' => [
-                'label' => 'Kepala Lab',
+            'id_kategori_barang' => [
+                'label' => 'Kategori barang',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Wajib diisi!',
                 ]
             ],
+            'kd_invetaris' => [
+                'label' => 'Kode barang',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib diisi!',
+                ]
+            ],
+            'nama_barang' => [
+                'label' => 'Nama barang',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib diisi!',
+                ]
+            ],
+            'tgl_barang_masuk' => [
+                'label' => 'Tanggal pengajuan',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib diisi!',
+                ]
+            ],
+            'kd_perolehan_brg' => [
+                'label' => 'Sumber pengadaan barang',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib diisi!',
+                ]
+            ],
+            'catatan' => [
+                'label' => 'Catatan',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib diisi!',
+                ]
+            ],
+
+            
         ])) {
             //if valid
             $data = [
-                'nama' => $this->request->getPost('nama'),
-                'kepala_lab' => $this->request->getPost('kepala_lab'),
+                'id_barang' => $this->request->getPost('id_barang'),
+                'id_labkom' => $this->request->getPost('id_labkom'),
+                'id_kategori_barang' => $this->request->getPost('id_kategori_barang'),
+                'kd_invetaris' => $this->request->getPost('kd_invetaris'),
+                'nama_barang' => $this->request->getPost('nama_barang'),
+                'tgl_barang_masuk' => $this->request->getPost('tgl_barang_masuk'),
+                'kd_perolehan_brg' => $this->request->getPost('kd_perolehan_brg'),
+                'kondisi' => $this->request->getPost('kondisi'),
+                'catatan' => $this->request->getPost('catatan'),
+                'status' => $this->request->getPost('status')
             ];
             $this->ModelPengajuan->add($data);
             session()->setFlashdata('pesan', 'Data berhasil ditambahkan');

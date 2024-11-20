@@ -114,9 +114,9 @@
           <div class="col-sm-6">
             <h1>Data Pengajuan Barang</h1>
           </div>
-          <!-- <div class="col-sm-6 text-right">
+          <div class="col-sm-6 text-right">
                     <button class="btn bg-gradient-success" data-toggle="modal" data-target="#add"><i class="fas fa-plus"></i> Tambah Data</button>
-                </div> -->
+                </div>
         </div>
       </div><!-- /.container-fluid -->
     </section>
@@ -140,13 +140,15 @@
                   <thead>
                   <tr>
                     <th class="text-center">No</th>
+                    <th>Labkom</th>
                     <th>Kode Barang</th>
-                    <th>Nama Barang</th>
                     <th>Kategori Barang</th>
-                    <th>Sumber Pengadaan Barang</th>
-                    <th>Tanggal Masuk/Keluar Barang</th>
-                    <th>Kondisi</th>
+                    <th>Nama Barang</th>
+                    <th>Sumber</th>
+                    <th>Tanggal Pengajuan</th>
+                    <!-- <th>Kondisi</th> -->
                     <th>Catatan</th>
+                    <th>Status</th>
                     <th class="text-center">Aksi</th>
                   </tr>
                   </thead>
@@ -156,13 +158,15 @@
                     foreach ($d as $key => $value) { ?>
                   <tr>
                     <td class="text-center"><?= $no++ ?></td>
+                    <td><?= $value['labkom_nama'] ?></td>
                     <td><?= $value['kd_invetaris'] ?></td>
+                    <td><?= $value['nama_kategori_barang'] ?></td>
                     <td><?= $value['nama_barang'] ?></td>
-                    <td><?= $value['id_kategori_barang'] ?></td>
                     <td><?= $value['kd_perolehan_brg'] ?></td>
-                    <td><?= $value['tgl_barang_masuk'] ?> / <?= $value['tgl_barang_keluar'] ?></td>
-                    <td><?= $value['kondisi'] ?></td>
+                    <td><?= $value['tgl_barang_masuk'] ?></td>
+                    <!-- <td><?= $value['kondisi'] ?></td> -->
                     <td><?= $value['catatan'] ?></td>
+                    <td><?= $value['status'] ?></td>
                     <td class="text-center">
                     <!-- <a class="btn btn-warning btn-sm" href="<?= base_url('pengajuan/edit/' . $value['id'])?>"><i class="fa fa-edit"></i></a> -->
                     <!-- <a href="<?= base_url('pengajuan/print/' . $value['id']) ?>" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-scroll"></i></a> -->
@@ -207,24 +211,67 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header d-flex justify-content-between align-items-center">
-                <h4 class="modal-title font-weight-bold ml-auto">Tambah Data Labkom</h4>
+                <h4 class="modal-title font-weight-bold ml-auto">Tambah Data Pengajuan Barang</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <?php
-                echo form_open('labkom/add');
+                echo form_open('pengajuan/add');
                 ?>
                 <div class="form-group">
-                    <label>Nama Lab Komputer</label>
-                    <input name="nama" class="form-control" placeholder="Labkom.." required>
+                    <label>Labkom</label>
+                    <select name="id_labkom" class="form-control select2" style="width: 100%;">
+                        <option value="">--Pilih Labkom--</option>
+                        <?php foreach ($labkom as $key => $value) { ?>
+                            <option value="<?= $value['id'] ?>"><?= $value['nama'] ?></option>
+                        <?php } ?>
+                    </select>
                 </div>
 
                 <div class="form-group">
-                    <label>Kepala Lab</label>
-                    <input name="kepala_lab" class="form-control" placeholder="Nama Kepala Lab.." required>
+                    <label>Kategori Barang</label>
+                    <select name="id_kategori_barang" class="form-control select2" style="width: 100%;">
+                        <option value="">--Pilih kategori Barang--</option>
+                        <?php foreach ($kategori as $key => $value) { ?>
+                            <option value="<?= $value['id'] ?>"><?= $value['nama_kategori_barang'] ?></option>
+                        <?php } ?>
+                    </select>
                 </div>
+
+                <div class="form-group">
+                    <label>Kode Barang</label>
+                    <input name="kd_invetaris" class="form-control" placeholder="Kode Barang.." required>
+                </div>
+
+                <div class="form-group">
+                    <label>Nama Barang</label>
+                    <input name="nama_barang" class="form-control" placeholder="Nama Barang.." required>
+                </div>
+
+                <div class="form-group">
+                    <label>Tanggal Pengajuan</label>
+                    <input name="tgl_barang_masuk" type="date" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Sumber Pengadaan Barang</label>
+                    <select class="form-control select2" style="width: 100%;" name="kd_perolehan_brg">
+                      <option value="">--Pilih Sumber--</option>
+                      <option value="BOS">BOS</option>
+                      <option value="PCM">PCM</option>
+                      <option value="Mandiri">Mandiri</option>
+                      <span class="fa fa-user form-control-feedback"></span>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Catatan</label>
+                    <input name="catatan" class="form-control" placeholder="Catatan.." required>
+                </div>
+
+                <input type="hidden" name="status" value="Belum diverifikasi Kepala program dan Kepala sekolah">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>

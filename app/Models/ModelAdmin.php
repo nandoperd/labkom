@@ -17,4 +17,16 @@ class ModelAdmin  extends Model
         return $this->db->table('data_kategori_barang')
             ->countAll();
     }
+
+    public function jmlPengelolaan()
+    {
+        return $this->db->table('data_barang')
+            ->countAll();
+    }
+
+    public function jmlPengajuan()
+    {
+        return $this->db->table('data_pengajuan_barang')
+            ->countAll();
+    }
 }

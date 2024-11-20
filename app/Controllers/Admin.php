@@ -18,6 +18,8 @@ class Admin extends BaseController
             'title' => 'Admin Labkom',
             'jmlLabkom' => $this->ModelAdmin->jmlLabkom(),
             'jmlKategori' => $this->ModelAdmin->jmlKategori(),
+            'jmlPengelolaan' => $this->ModelAdmin->jmlPengelolaan(),
+            'jmlPengajuan' => $this->ModelAdmin->jmlPengajuan(),
         ];
         return view('admin/v_index', $data);
     }

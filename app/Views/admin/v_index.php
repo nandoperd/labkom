@@ -152,7 +152,7 @@
           <!-- small box -->
           <div class="small-box bg-warning">
             <div class="inner">
-              <h3><?= $jmlLabkom;?></h3>
+              <h3><?= $jmlPengelolaan;?></h3>
               <p>Pengelolaan Barang</p>
             </div>
             <div class="icon">
@@ -166,7 +166,7 @@
           <!-- small box -->
           <div class="small-box bg-danger">
             <div class="inner">
-              <h3><?= $jmlLabkom;?></h3>
+              <h3><?= $jmlPengajuan;?></h3>
               <p>Pengajuan Barang</p>
             </div>
             <div class="icon">

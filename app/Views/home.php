@@ -88,7 +88,7 @@
             <option value="2">Kepala Program</option>
             <option value="1">Staf Lab Komputer</option>
             <span class="fa fa-user form-control-feedback"></span>
-            </select>
+          </select>
         </div>
         <div class="row">
           <div class="col-8">

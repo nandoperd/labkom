@@ -112,7 +112,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Data Labkom</h1>
+            <h1>Data Kategori Barang</h1>
           </div>
           <div class="col-sm-6 text-right">
                     <button class="btn bg-gradient-success" data-toggle="modal" data-target="#add"><i class="fas fa-plus"></i> Tambah Data</button>
