@@ -2,98 +2,68 @@
 
 namespace App\Controllers;
 
-use App\Models\ModelPengajuan;
+use App\Models\ModelBarang;
 
 use App\Controllers\BaseController;
 
-class Pengajuan extends BaseController
+class Barang extends BaseController
 {
-    protected $ModelPengajuan;
+    protected $ModelBarang;
 
     public function __construct()
     {
         helper('form');
-        $this->ModelPengajuan = new ModelPengajuan();
+        $this->ModelBarang = new ModelBarang();
     }
 
     public function index()
     {
         $data = [
-            'title' => 'Data Pengelolaan Barang',
-            'd' => $this->ModelPengajuan->allData(),
-            'labkom' => $this->ModelPengajuan->dataLabkom(),
-            'kategori' => $this->ModelPengajuan->dataKategori()
+            'title' => 'Data Barang',
+            'd' => $this->ModelBarang->allData(),
+            'kategori' => $this->ModelBarang->dataKategori()
         ];
-        return view('pengajuan/v_index', $data);
+        return view('barang/v_index', $data);
     }
 
     public function add()
     {
         if ($this->validate([
-            'id_labkom' => [
-                'label' => 'Labkom',
-                'rules' => 'required',
-                'errors' => [
-                    'required' => '{field} Wajib diisi!',
-                ]
-            ],
             'id_kategori_barang' => [
-                'label' => 'Kategori barang',
+                'label' => 'Kategori Barang',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Wajib diisi!',
                 ]
             ],
             'nama_barang' => [
-                'label' => 'Nama barang',
+                'label' => 'Nama Barang',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Wajib diisi!',
                 ]
             ],
-            'tgl_barang_masuk' => [
-                'label' => 'Tanggal pengajuan',
+            'kode_barang' => [
+                'label' => 'Kode Barang',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Wajib diisi!',
                 ]
             ],
-            'kd_perolehan_brg' => [
-                'label' => 'Sumber pengadaan barang',
-                'rules' => 'required',
-                'errors' => [
-                    'required' => '{field} Wajib diisi!',
-                ]
-            ],
-            'catatan' => [
-                'label' => 'Catatan',
-                'rules' => 'required',
-                'errors' => [
-                    'required' => '{field} Wajib diisi!',
-                ]
-            ],
-
-            
         ])) {
             //if valid
             $data = [
-                'id_barang' => $this->request->getPost('id_barang'),
-                'id_labkom' => $this->request->getPost('id_labkom'),
                 'id_kategori_barang' => $this->request->getPost('id_kategori_barang'),
                 'nama_barang' => $this->request->getPost('nama_barang'),
-                'tgl_barang_masuk' => $this->request->getPost('tgl_barang_masuk'),
-                'kd_perolehan_brg' => $this->request->getPost('kd_perolehan_brg'),
-                'kondisi' => $this->request->getPost('kondisi'),
-                'catatan' => $this->request->getPost('catatan'),
-                'status' => $this->request->getPost('status')
+                'kode_barang' => $this->request->getPost('kode_barang'),
             ];
-            $this->ModelPengajuan->add($data);
+            $this->ModelBarang->add($data);
             session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
-            return redirect()->to(base_url('pengajuan'));
+            return redirect()->to(base_url('barang'));
         } else {
             //if not valid
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('pengajuan'));
+            return redirect()->to(base_url('barang'));
         }
     }
 
@@ -101,10 +71,10 @@ class Pengajuan extends BaseController
     {
         $data = [
             'title' => 'Edit Data Labkom',
-            'data' => $this->ModelPengajuan->allData(),
-            'd' => $this->ModelPengajuan->detailData($id)
+            'data' => $this->ModelBarang->allData(),
+            'd' => $this->ModelBarang->detailData($id)
         ];
-        return view('pengajuan/v_edit', $data);
+        return view('barang/v_edit', $data);
     }
 
     public function update($id)
@@ -122,7 +92,7 @@ class Pengajuan extends BaseController
                 'id' => $id,
                 'nama' => $this->request->getPost('nama'),
             );
-            $this->ModelPengajuan->edit($data);
+            $this->ModelBarang->edit($data);
             session()->setFlashdata('pesan', 'Data berhasil diubah');
             return redirect()->to(base_url('data'));
         } else {
@@ -136,9 +106,9 @@ class Pengajuan extends BaseController
         $data = [
             'id' => $id,
         ];
-        $this->ModelPengajuan->deleteData($data);
+        $this->ModelBarang->deleteData($data);
         session()->setFlashdata('pesan', 'Data berhasil dihapus');
-        return redirect()->to(base_url('pengajuan'));
+        return redirect()->to(base_url('barang'));
     }
 
 }

@@ -76,8 +76,14 @@
     </li>
     <li class="nav-item">
       <a href="<?= base_url('kategori') ?>" class="nav-link">
-        <i class="nav-icon fas fa-boxes"></i>
+        <i class="nav-icon fas fa-sitemap"></i>
         <p>Data Kategori Barang</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="<?= base_url('barang') ?>" class="nav-link">
+        <i class="nav-icon fas fa-boxes"></i>
+        <p>Data Barang</p>
       </a>
     </li>
     <li class="nav-item">
@@ -159,7 +165,6 @@
                   <tr>
                     <td class="text-center"><?= $no++ ?></td>
                     <td><?= $value['labkom_nama'] ?></td>
-                    <td><?= $value['kd_invetaris'] ?></td>
                     <td><?= $value['nama_kategori_barang'] ?></td>
                     <td><?= $value['nama_barang'] ?></td>
                     <td><?= $value['kd_perolehan_brg'] ?></td>
@@ -238,11 +243,6 @@
                             <option value="<?= $value['id'] ?>"><?= $value['nama_kategori_barang'] ?></option>
                         <?php } ?>
                     </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Kode Barang</label>
-                    <input name="kd_invetaris" class="form-control" placeholder="Kode Barang.." required>
                 </div>
 
                 <div class="form-group">

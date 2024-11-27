@@ -50,6 +50,7 @@ class Filters extends BaseConfig
                     'kategori', 'kategori/*',
                     'pengelolaan', 'pengelolaan/*',
                     'pengajuan', 'pengajuan/*',
+                    'barang', 'barang/*',
                 ]
             ],
             'toolbar',

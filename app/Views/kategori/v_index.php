@@ -76,8 +76,14 @@
     </li>
     <li class="nav-item">
       <a href="<?= base_url('kategori') ?>" class="nav-link">
-        <i class="nav-icon fas fa-boxes"></i>
+        <i class="nav-icon fas fa-sitemap"></i>
         <p>Data Kategori Barang</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="<?= base_url('barang') ?>" class="nav-link">
+        <i class="nav-icon fas fa-boxes"></i>
+        <p>Data Barang</p>
       </a>
     </li>
     <li class="nav-item">

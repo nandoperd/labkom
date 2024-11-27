@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data Pengelolaan Barang</title>
+  <title>Data Barang</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -118,7 +118,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Data Pengelolaan Barang</h1>
+            <h1>Data Barang</h1>
           </div>
           <div class="col-sm-6 text-right">
                     <button class="btn bg-gradient-success" data-toggle="modal" data-target="#add"><i class="fas fa-plus"></i> Tambah Data</button>
@@ -146,12 +146,9 @@
                   <thead>
                   <tr>
                     <th class="text-center">No</th>
-                    <!-- <th>Nama Barang</th> -->
-                    <th>Kategori Barang</th>
-                    <th>Sumber Pengadaan Barang</th>
-                    <th>Tanggal Masuk/Keluar Barang</th>
-                    <th>Kondisi</th>
-                    <th>Catatan</th>
+                    <th>Kategori</th>
+                    <th>Nama</th>
+                    <th>Kode Barang</th>
                     <th class="text-center">Aksi</th>
                   </tr>
                   </thead>
@@ -161,15 +158,12 @@
                     foreach ($d as $key => $value) { ?>
                   <tr>
                     <td class="text-center"><?= $no++ ?></td>
-                    <!-- <td><?= $value['nama_barang'] ?></td> -->
-                    <td><?= $value['id_kategori_barang'] ?></td>
-                    <td><?= $value['kd_perolehan_brg'] ?></td>
-                    <td><?= $value['tgl_barang_masuk'] ?> / <?= $value['tgl_barang_keluar'] ?></td>
-                    <td><?= $value['kondisi'] ?></td>
-                    <td><?= $value['catatan'] ?></td>
+                    <td><?= $value['kategori_nama'] ?></td>
+                    <td><?= $value['nama_barang'] ?></td>
+                    <td><?= $value['kode_barang'] ?></td>
                     <td class="text-center">
-                    <!-- <a class="btn btn-warning btn-sm" href="<?= base_url('pengelolaan/edit/' . $value['id'])?>"><i class="fa fa-edit"></i></a> -->
-                    <!-- <a href="<?= base_url('pengelolaan/print/' . $value['id']) ?>" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-scroll"></i></a> -->
+                    <!-- <a class="btn btn-warning btn-sm" href="<?= base_url('data/edit/' . $value['id'])?>"><i class="fa fa-edit"></i></a> -->
+                    <!-- <a href="<?= base_url('data/print/' . $value['id']) ?>" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-scroll"></i></a> -->
                     <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id']  ?>"><i class="fa fa-trash"></i></button>
                     </td>
                   </tr>
@@ -211,28 +205,18 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header d-flex justify-content-between align-items-center">
-                <h4 class="modal-title font-weight-bold ml-auto">Tambah Data</h4>
+                <h4 class="modal-title font-weight-bold ml-auto">Tambah Data Barang</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <?php
-                echo form_open('pengelolaan/add');
+                echo form_open('barang/add');
                 ?>
                 <div class="form-group">
-                    <label>Labkom</label>
-                    <select name="id_labkom" class="form-control select2" style="width: 100%;">
-                        <option value="">--Pilih Labkom--</option>
-                        <?php foreach ($labkom as $key => $value) { ?>
-                            <option value="<?= $value['id'] ?>"><?= $value['nama'] ?></option>
-                        <?php } ?>
-                    </select>
-                </div>
-
-                <div class="form-group">
                     <label>Kategori Barang</label>
-                    <select id="id_kategori_barang" name="id_kategori_barang" class="form-control select2" style="width: 100%;">
+                    <select name="id_kategori_barang" class="form-control select2" style="width: 100%;">
                         <option value="">--Pilih kategori Barang--</option>
                         <?php foreach ($kategori as $key => $value) { ?>
                             <option value="<?= $value['id'] ?>"><?= $value['nama_kategori_barang'] ?></option>
@@ -241,10 +225,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Data Barang</label>
-                    <select id="id_barang" name="id_barang" class="form-control select2" style="width: 100%;">
-                        <option value="">--Pilih Data Barang--</option>
-                    </select>
+                    <label>Nama Barang</label>
+                    <input name="nama_barang" class="form-control" placeholder="Nama Barang.." required>
+                </div>
+
+                <div class="form-group">
+                    <label>Kode Barang</label>
+                    <input name="kode_barang" class="form-control" placeholder="Kode Barang.." required>
                 </div>
 
             </div>
@@ -271,7 +258,7 @@
 
                     </div>
                     <div class="modal-footer">
-                      <a href="<?= base_url('labkom/delete/' . $value['id']) ?>" class="btn btn-success">Hapus</a>
+                      <a href="<?= base_url('barang/delete/' . $value['id']) ?>" class="btn btn-success">Hapus</a>
                         <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Tutup</button>
                     </div>
                 </div>
@@ -332,34 +319,6 @@
             $($this).remove();
         });
     }, 3000);
-</script>
-
-<!-- get data barang per kategori -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function() {
-    $('#id_kategori_barang').change(function() {
-        var id_kategori_barang = $(this).val();
-        
-        if (id_kategori_barang) {
-            $.ajax({
-                url: '<?= base_url('pengelolaan/getBarangByKategori/') ?>' + id_kategori_barang,
-                type: 'GET',
-                dataType: 'json',
-                success: function(data) {
-                    $('#id_barang').empty();
-                    $('#id_barang').append('<option value="">--Pilih Data Barang--</option>');
-                    $.each(data, function(key, value) {
-                        $('#id_barang').append('<option value="'+ value.id +'">'+ value.nama_barang +'</option>');
-                    });
-                }
-            });
-        } else {
-            $('#id_barang').empty();
-            $('#id_barang').append('<option value="">--Pilih Data Barang--</option>');
-        }
-    });
-});
 </script>
 
 </body>

@@ -21,6 +21,8 @@ class Pengelolaan extends BaseController
         $data = [
             'title' => 'Data Pengelolaan Barang',
             'd' => $this->ModelPengelolaan->allData(),
+            'labkom' => $this->ModelPengelolaan->dataLabkom(),
+            'kategori' => $this->ModelPengelolaan->dataKategori()
         ];
         return view('pengelolaan/v_index', $data);
     }
@@ -29,7 +31,7 @@ class Pengelolaan extends BaseController
     {
         if ($this->validate([
             'nama' => [
-                'label' => 'Nama Labkom',
+                'label' => 'Labkom',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Wajib diisi!',
@@ -100,6 +102,12 @@ class Pengelolaan extends BaseController
         $this->ModelPengelolaan->deleteData($data);
         session()->setFlashdata('pesan', 'Data berhasil dihapus');
         return redirect()->to(base_url('pengelolaan'));
+    }
+
+    public function getBarangByKategori($id_kategori_barang)
+    {
+        $data_barang = $this->ModelPengelolaan->getBarangByKategori($id_kategori_barang);
+        return $this->response->setJSON($data_barang);
     }
 
 }

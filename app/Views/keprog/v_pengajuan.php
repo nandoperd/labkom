@@ -150,7 +150,6 @@
                   <tr>
                     <td class="text-center"><?= $no++ ?></td>
                     <td><?= $value['labkom_nama'] ?></td>
-                    <!-- <td><?= $value['kd_invetaris'] ?></td> -->
                     <td><?= $value['nama_kategori_barang'] ?></td>
                     <td><?= $value['nama_barang'] ?></td>
                     <td><?= $value['kd_perolehan_brg'] ?></td>

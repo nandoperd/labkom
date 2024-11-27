@@ -85,8 +85,14 @@
     </li>
     <li class="nav-item">
       <a href="<?= base_url('kategori') ?>" class="nav-link">
-        <i class="nav-icon fas fa-boxes"></i>
+        <i class="nav-icon fas fa-sitemap"></i>
         <p>Data Kategori Barang</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="<?= base_url('barang') ?>" class="nav-link">
+        <i class="nav-icon fas fa-boxes"></i>
+        <p>Data Barang</p>
       </a>
     </li>
     <li class="nav-item">
@@ -142,9 +148,23 @@
               <p>Data Kategori Barang</p>
             </div>
             <div class="icon">
-              <i class="fas fa-boxes"></i>
+              <i class="fas fa-sitemap"></i>
             </div>
             <a href="<?= base_url('kategori') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="small-box bg-secondary">
+            <div class="inner">
+              <h3><?= $jmlKategori;?></h3>
+              <p>Data Barang</p>
+            </div>
+            <div class="icon">
+              <i class="fas fa-boxes"></i>
+            </div>
+            <a href="<?= base_url('barang') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->

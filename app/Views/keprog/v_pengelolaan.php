@@ -147,7 +147,6 @@
                     foreach ($pengelolaanData as $key => $value) { ?>
                   <tr>
                     <td class="text-center"><?= $no++ ?></td>
-                    <td><?= $value['kd_invetaris'] ?></td>
                     <td><?= $value['nama_barang'] ?></td>
                     <td><?= $value['id_kategori_barang'] ?></td>
                     <td><?= $value['kd_perolehan_brg'] ?></td>
