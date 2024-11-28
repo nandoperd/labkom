@@ -30,15 +30,43 @@ class Pengelolaan extends BaseController
     public function add()
     {
         if ($this->validate([
-            'nama' => [
+            'id_labkom' => [
                 'label' => 'Labkom',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Wajib diisi!',
                 ]
             ],
-            'kepala_lab' => [
-                'label' => 'Kepala Lab',
+            'id_kategori_barang' => [
+                'label' => 'Kategori',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib diisi!',
+                ]
+            ],
+            'id_barang' => [
+                'label' => 'Barang',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib diisi!',
+                ]
+            ],
+            'tgl_barang_masuk' => [
+                'label' => 'Tanggal barang masuk',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib diisi!',
+                ]
+            ],
+            'kd_perolehan_brg' => [
+                'label' => 'Sumber pengadaan barang',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib diisi!',
+                ]
+            ],
+            'catatan' => [
+                'label' => 'Catatan',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Wajib diisi!',
@@ -47,8 +75,14 @@ class Pengelolaan extends BaseController
         ])) {
             //if valid
             $data = [
-                'nama' => $this->request->getPost('nama'),
-                'kepala_lab' => $this->request->getPost('kepala_lab'),
+                'id_labkom' => $this->request->getPost('id_labkom'),
+                'id_kategori_barang' => $this->request->getPost('id_kategori_barang'),
+                'id_barang' => $this->request->getPost('id_barang'),
+                'tgl_barang_masuk' => $this->request->getPost('tgl_barang_masuk'),
+                'kd_perolehan_brg' => $this->request->getPost('kd_perolehan_brg'),
+                'kondisi' => $this->request->getPost('kondisi'),
+                'catatan' => $this->request->getPost('catatan'),
+                'status' => $this->request->getPost('status'),
             ];
             $this->ModelPengelolaan->add($data);
             session()->setFlashdata('pesan', 'Data berhasil ditambahkan');

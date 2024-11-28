@@ -146,7 +146,7 @@
                   <thead>
                   <tr>
                     <th class="text-center">No</th>
-                    <!-- <th>Nama Barang</th> -->
+                    <th>Nama Barang</th>
                     <th>Kategori Barang</th>
                     <th>Sumber Pengadaan Barang</th>
                     <th>Tanggal Masuk/Keluar Barang</th>
@@ -161,11 +161,19 @@
                     foreach ($d as $key => $value) { ?>
                   <tr>
                     <td class="text-center"><?= $no++ ?></td>
-                    <!-- <td><?= $value['nama_barang'] ?></td> -->
-                    <td><?= $value['id_kategori_barang'] ?></td>
+                    <td><?= $value['nama_barang'] ?></td>
+                    <td><?= $value['nama_kategori_barang'] ?></td>
                     <td><?= $value['kd_perolehan_brg'] ?></td>
                     <td><?= $value['tgl_barang_masuk'] ?> / <?= $value['tgl_barang_keluar'] ?></td>
-                    <td><?= $value['kondisi'] ?></td>
+                    <td>
+                      <?php if ($value['kondisi'] == 1): ?>
+                          <span class="badge bg-success">Baik</span>
+                      <?php elseif ($value['kondisi'] == 2): ?>
+                          <span class="badge bg-danger">Rusak</span>
+                      <?php else: ?>
+                          <span class="badge bg-secondary">-</span>
+                      <?php endif; ?>
+                    </td>
                     <td><?= $value['catatan'] ?></td>
                     <td class="text-center">
                     <!-- <a class="btn btn-warning btn-sm" href="<?= base_url('pengelolaan/edit/' . $value['id'])?>"><i class="fa fa-edit"></i></a> -->
@@ -247,6 +255,30 @@
                     </select>
                 </div>
 
+                <div class="form-group">
+                    <label>Tanggal Barang Masuk</label>
+                    <input name="tgl_barang_masuk" type="date" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Sumber Pengadaan Barang</label>
+                    <select class="form-control select2" style="width: 100%;" name="kd_perolehan_brg">
+                      <option value="">--Pilih Sumber--</option>
+                      <option value="BOS">BOS</option>
+                      <option value="PCM">PCM</option>
+                      <option value="Mandiri">Mandiri</option>
+                      <span class="fa fa-user form-control-feedback"></span>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Catatan</label>
+                    <input name="catatan" class="form-control" placeholder="Catatan.." required>
+                </div>
+
+                <input type="hidden" name="kondisi" value= 1>
+                <input type="hidden" name="status" value= 1>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
@@ -271,7 +303,7 @@
 
                     </div>
                     <div class="modal-footer">
-                      <a href="<?= base_url('labkom/delete/' . $value['id']) ?>" class="btn btn-success">Hapus</a>
+                      <a href="<?= base_url('pengelolaan/delete/' . $value['id']) ?>" class="btn btn-success">Hapus</a>
                         <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Tutup</button>
                     </div>
                 </div>

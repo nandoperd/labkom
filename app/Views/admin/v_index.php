@@ -158,7 +158,7 @@
           <!-- small box -->
           <div class="small-box bg-secondary">
             <div class="inner">
-              <h3><?= $jmlKategori;?></h3>
+              <h3><?= $jmlBarang;?></h3>
               <p>Data Barang</p>
             </div>
             <div class="icon">

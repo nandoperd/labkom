@@ -9,7 +9,10 @@ class ModelPengelolaan  extends Model
     public function allData()
     {
         return $this->db->table('data_pengelolaan_barang')
-            ->orderBy('id', 'ASC')
+            ->select('data_pengelolaan_barang.*, data_barang.nama_barang, data_kategori_barang.nama_kategori_barang')
+            ->join('data_barang', 'data_pengelolaan_barang.id_barang = data_barang.id', 'left')
+            ->join('data_kategori_barang', 'data_pengelolaan_barang.id_kategori_barang = data_kategori_barang.id', 'left')
+            ->orderBy('data_pengelolaan_barang.id', 'ASC')
             ->get()->getResultArray();
     }
 
