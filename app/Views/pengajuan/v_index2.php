@@ -122,7 +122,7 @@
           </div>
           <div class="col-sm-6 text-right">
               <button class="btn bg-gradient-success" data-toggle="modal" data-target="#add"><i class="fas fa-plus"></i> Pengajuan Barang Baru</button>
-              <button class="btn bg-gradient-warning" data-toggle="modal" data-target="#addPengelolaan"><i class="fas fa-plus"></i> Pengajuan Barang</button>
+              <button class="btn bg-gradient-warning" data-toggle="modal" data-target="#add"><i class="fas fa-plus"></i> Pengajuan Barang</button>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -148,6 +148,7 @@
                   <tr>
                     <th class="text-center">No</th>
                     <th>Labkom</th>
+                    <th>Kode Barang</th>
                     <th>Kategori Barang</th>
                     <th>Nama Barang</th>
                     <th>Sumber</th>
@@ -216,7 +217,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header d-flex justify-content-between align-items-center">
-                <h4 class="modal-title font-weight-bold ml-auto">Tambah Data Pengajuan Barang Baru</h4>
+                <h4 class="modal-title font-weight-bold ml-auto">Tambah Data Pengajuan Barang</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -284,57 +285,6 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- /.modal add -->
-
-<!-- Modal Add Pengelolaan -->
-<div class="modal fade" id="addPengelolaan">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header d-flex justify-content-between align-items-center">
-                <h4 class="modal-title font-weight-bold ml-auto">Tambah Data Pengajuan Barang</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <?php echo form_open('pengajuan/add'); ?>
-                
-                <div class="form-group">
-                    <label for="barang">Pilih Barang</label>
-                    <div class="table-responsive">
-                        <table id="tableBarang" class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Nama Barang</th>
-                                    <th>Aksi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                $no = 1;
-                                foreach ($dataBarang as $barang) { ?>
-                                    <tr>
-                                        <td><?= $no++; ?></td>
-                                        <td><?= $barang['nama_barang']; ?></td>
-                                        <td>
-                                            <button type="button" class="btn btn-sm btn-primary btnPilihBarang" 
-                                                    data-id="<?= $barang['id']; ?>" 
-                                                    data-nama="<?= $barang['nama_barang']; ?>">
-                                                Pilih
-                                            </button>
-                                        </td>
-                                    </tr>
-                                <?php } ?>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <?php echo form_close(); ?>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- modal add pengelolaan -->
 
 <!-- modal delete -->
 <?php foreach ($d as $key => $value) { ?>

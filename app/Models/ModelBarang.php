@@ -39,12 +39,20 @@ class ModelBarang  extends Model
             ->where('id', $data['id'])->delete($data);
     }
 
+    // public function dataKategori()
+    // {
+    //     return $this->db->table('data_kategori_barang')
+    //         ->select('data_kategori_barang.id, data_kategori_barang.nama_kategori_barang, data_barang.id_kategori_barang')
+    //         ->join('data_barang', 'data_barang.id_kategori_barang = data_kategori_barang.id', 'left')
+    //         ->orderBy('data_kategori_barang.nama_kategori_barang', 'ASC')
+    //         ->get()->getResultArray();
+    // }
+
     public function dataKategori()
     {
         return $this->db->table('data_kategori_barang')
-            ->select('data_kategori_barang.id, data_kategori_barang.nama_kategori_barang, data_barang.id_kategori_barang')
-            ->join('data_barang', 'data_barang.id_kategori_barang = data_kategori_barang.id', 'left')
-            ->orderBy('data_kategori_barang.nama_kategori_barang', 'ASC')
+            ->select('id, nama_kategori_barang')
+            ->orderBy('nama_kategori_barang', 'ASC')
             ->get()->getResultArray();
     }
 }

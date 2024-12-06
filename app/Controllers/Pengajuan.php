@@ -3,17 +3,20 @@
 namespace App\Controllers;
 
 use App\Models\ModelPengajuan;
+use App\Models\ModelPengelolaan;
 
 use App\Controllers\BaseController;
 
 class Pengajuan extends BaseController
 {
     protected $ModelPengajuan;
+    protected $ModelPengelolaan;
 
     public function __construct()
     {
         helper('form');
         $this->ModelPengajuan = new ModelPengajuan();
+        $this->ModelPengelolaan = new ModelPengelolaan();
     }
 
     public function index()
@@ -22,7 +25,8 @@ class Pengajuan extends BaseController
             'title' => 'Data Pengelolaan Barang',
             'd' => $this->ModelPengajuan->allData(),
             'labkom' => $this->ModelPengajuan->dataLabkom(),
-            'kategori' => $this->ModelPengajuan->dataKategori()
+            'kategori' => $this->ModelPengajuan->dataKategori(),
+            'dataBarang' => $this->ModelPengelolaan->allData()
         ];
         return view('pengajuan/v_index', $data);
     }

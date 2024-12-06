@@ -146,10 +146,11 @@
                   <thead>
                   <tr>
                     <th class="text-center">No</th>
+                    <th>Labkom</th>
                     <th>Nama Barang</th>
                     <th>Kategori Barang</th>
-                    <th>Sumber Pengadaan Barang</th>
-                    <th>Tanggal Masuk/Keluar Barang</th>
+                    <th>Sumber Pengadaan</th>
+                    <th>Tanggal Masuk/Keluar</th>
                     <th>Kondisi</th>
                     <th>Catatan</th>
                     <th class="text-center">Aksi</th>
@@ -161,6 +162,7 @@
                     foreach ($d as $key => $value) { ?>
                   <tr>
                     <td class="text-center"><?= $no++ ?></td>
+                    <td><?= $value['labkom_nama'] ?></td>
                     <td><?= $value['nama_barang'] ?></td>
                     <td><?= $value['nama_kategori_barang'] ?></td>
                     <td><?= $value['kd_perolehan_brg'] ?></td>
@@ -171,14 +173,13 @@
                       <?php elseif ($value['kondisi'] == 2): ?>
                           <span class="badge bg-danger">Rusak</span>
                       <?php else: ?>
-                          <span class="badge bg-secondary">-</span>
+                          <span class="badge bg-secondary">Tidak Digunakan</span>
                       <?php endif; ?>
                     </td>
                     <td><?= $value['catatan'] ?></td>
                     <td class="text-center">
-                    <!-- <a class="btn btn-warning btn-sm" href="<?= base_url('pengelolaan/edit/' . $value['id'])?>"><i class="fa fa-edit"></i></a> -->
-                    <!-- <a href="<?= base_url('pengelolaan/print/' . $value['id']) ?>" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-scroll"></i></a> -->
-                    <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id']  ?>"><i class="fa fa-trash"></i></button>
+                      <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id']  ?>"><i class="fa fa-trash"></i></button>
+                      <a class="btn btn-warning btn-sm" href="<?= base_url('pengelolaan/edit/' . $value['id']) ?>"><i class="fas fa-edit"></i></a>
                     </td>
                   </tr>
                   <?php } ?>
@@ -312,7 +313,7 @@
             <!-- /.modal-dialog -->
         </div>
         <!-- /.modal -->
-    <?php } ?>
+<?php } ?>
 
 <!-- scripts -->
 <!-- jQuery -->

@@ -9,20 +9,25 @@ class ModelPengelolaan  extends Model
     public function allData()
     {
         return $this->db->table('data_pengelolaan_barang')
-            ->select('data_pengelolaan_barang.*, data_barang.nama_barang, data_kategori_barang.nama_kategori_barang')
+            ->select('data_pengelolaan_barang.*, data_barang.nama_barang, data_kategori_barang.nama_kategori_barang, data_labkom.nama as labkom_nama')
             ->join('data_barang', 'data_pengelolaan_barang.id_barang = data_barang.id', 'left')
             ->join('data_kategori_barang', 'data_pengelolaan_barang.id_kategori_barang = data_kategori_barang.id', 'left')
+            ->join('data_labkom', 'data_pengelolaan_barang.id_labkom = data_labkom.id', 'left')
             ->orderBy('data_pengelolaan_barang.id', 'ASC')
             ->get()->getResultArray();
     }
 
+    // public function detailData($id)
+    // {
+    //     return $this->db->table('data_pengelolaan_barang')
+    //         ->where('id', $id)
+    //         ->get()->getRowArray();
+    // }
     public function detailData($id)
     {
-        return $this->db->table('data_pengelolaan_barang')
-            ->where('id', $id)
-            ->get()->getRowArray();
+        return $this->db->table('data_pengelolaan_barang')->where('id', $id)->get()->getRowArray();
     }
-
+    
     public function add($data)
     {
         $this->db->table('data_pengelolaan_barang')->insert($data);
@@ -40,12 +45,20 @@ class ModelPengelolaan  extends Model
             ->where('id', $data['id'])->delete($data);
     }
 
+    // public function dataLabkom()
+    // {
+    //     return $this->db->table('data_labkom')
+    //         ->select('data_labkom.id, data_labkom.nama, data_pengelolaan_barang.id_labkom')
+    //         ->join('data_pengelolaan_barang', 'data_pengelolaan_barang.id_labkom = data_labkom.id', 'left')
+    //         ->orderBy('data_labkom.nama', 'ASC')
+    //         ->get()->getResultArray();
+    // }
+
     public function dataLabkom()
     {
         return $this->db->table('data_labkom')
-            ->select('data_labkom.id, data_labkom.nama, data_pengelolaan_barang.id_labkom')
-            ->join('data_pengelolaan_barang', 'data_pengelolaan_barang.id_labkom = data_labkom.id', 'left')
-            ->orderBy('data_labkom.nama', 'ASC')
+            ->select('id, nama')
+            ->orderBy('nama', 'ASC')
             ->get()->getResultArray();
     }
 

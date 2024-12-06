@@ -95,38 +95,57 @@ class Pengelolaan extends BaseController
     }
 
     public function edit($id)
-    {
-        $data = [
-            'title' => 'Edit Data Labkom',
-            'data' => $this->ModelPengelolaan->allData(),
-            'd' => $this->ModelPengelolaan->detailData($id)
-        ];
-        return view('pengelolaan/v_edit', $data);
-    }
+{
+    $data = [
+        'title' => 'Edit Data',
+        'd' => $this->ModelPengelolaan->detailData($id) // Ambil data spesifik
+    ];
 
-    public function update($id)
-    {
-        if ($this->validate([
-            'nama' => [
-                'label' => 'Nama',
-                'rules' => 'required',
-                'errors' => [
-                    'required' => '{field} Wajib diisi!'
-                ]
-            ],
-        ])) {
-            $data = array(
-                'id' => $id,
-                'nama' => $this->request->getPost('nama'),
-            );
-            $this->ModelPengelolaan->edit($data);
-            session()->setFlashdata('pesan', 'Data berhasil diubah');
-            return redirect()->to(base_url('data'));
-        } else {
-            session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('data/edit/' . $id));
-        }
+    return view('pengelolaan/v_edit', $data);
+}
+
+public function update($id)
+{
+    if ($this->validate([
+        'kondisi' => [
+            'label' => 'Kondisi Barang',
+            'rules' => 'required',
+            'errors' => [
+                'required' => '{field} Wajib diisi!'
+            ]
+        ],
+        'tgl_barang_keluar' => [
+            'label' => 'Tanggal Barang Keluar',
+            'rules' => 'required',
+            'errors' => [
+                'required' => '{field} Wajib diisi!'
+            ]
+        ],
+        'catatan' => [
+            'label' => 'Catatan',
+            'rules' => 'required',
+            'errors' => [
+                'required' => '{field} Wajib diisi!'
+            ]
+        ],
+    ])) {
+        // Jika valid
+        $data = [
+            'id' => $id,
+            'kondisi' => $this->request->getPost('kondisi'),
+            'tgl_barang_keluar' => $this->request->getPost('tgl_barang_keluar'),
+            'catatan' => $this->request->getPost('catatan'),
+        ];
+
+        $this->ModelPengelolaan->edit($data);
+        session()->setFlashdata('pesan', 'Data berhasil diubah');
+        return redirect()->to(base_url('pengelolaan'));
+    } else {
+        // Jika tidak valid
+        session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
+        return redirect()->to(base_url('pengelolaan/edit/' . $id));
     }
+}
 
     public function delete($id)
     {
