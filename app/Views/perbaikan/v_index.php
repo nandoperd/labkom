@@ -181,7 +181,11 @@
                     </td>
                     <td><?= $value['catatan'] ?></td>
                     <td class="text-center">
-                      <a class="btn btn-success btn-sm" href="<?= base_url('perbaikan/verifAdmin/' . $value['id']) ?>"><i class="fas fa-arrow-alt-circle-right"></i></a>
+                        <?php if ($value['status'] == 5): ?>
+                            <a class="btn btn-primary btn-sm" href="<?= base_url('perbaikan/verifData/' . $value['id']) ?>"><i class="fas fa-check-circle"></i></a>
+                        <?php else: ?>
+                            <a class="btn btn-success btn-sm" href="<?= base_url('perbaikan/verifAdmin/' . $value['id']) ?>"><i class="fas fa-arrow-alt-circle-right"></i></a>
+                        <?php endif; ?>
                     </td>
                   </tr>
                   <?php } ?>

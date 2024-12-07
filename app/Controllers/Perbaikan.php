@@ -175,4 +175,17 @@ public function update($id)
         exit();
     }
 
+    public function verifData($id)
+    {
+        $data = [
+            'id' => $id,
+            'kondisi' => 1,
+            'catatan' => "Baik"
+        ];
+        $this->ModelPerbaikan->verifAdmin($data);
+        session()->setFlashdata('pesan', 'Data Berhasil Diupdate');
+        echo "<script>history.go(-1);</script>";
+        exit();
+    }
+
 }
