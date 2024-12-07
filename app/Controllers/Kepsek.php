@@ -2,53 +2,53 @@
 
 namespace App\Controllers;
 
-use App\Models\ModelKeprog;
+use App\Models\ModelKepsek;
 
-class Keprog extends BaseController
+class Kepsek extends BaseController
 {    // mendeklarasikan form pada v_login agar bisa berjalan
     public function __construct()
     {
         helper('form');
-        $this->ModelKeprog = new ModelKeprog();
+        $this->ModelKepsek = new ModelKepsek();
     }
 
     public function index()
     {
         $data = [
             'title' => 'Admin Labkom',
-            'jmlLabkom' => $this->ModelKeprog->jmlLabkom(),
-            'jmlKategori' => $this->ModelKeprog->jmlKategori(),
-            'jmlPengelolaan' => $this->ModelKeprog->jmlPengelolaan(),
-            'jmlPengajuan' => $this->ModelKeprog->jmlPengajuan(),
+            'jmlLabkom' => $this->ModelKepsek->jmlLabkom(),
+            'jmlKategori' => $this->ModelKepsek->jmlKategori(),
+            'jmlPengelolaan' => $this->ModelKepsek->jmlPengelolaan(),
+            'jmlPengajuan' => $this->ModelKepsek->jmlPengajuan(),
         ];
-        return view('keprog/v_index', $data);
+        return view('kepsek/v_index', $data);
     }
 
     public function labkom()
     {
         $data = [
             'title' => 'Data Labkom',
-            'labkomData' => $this->ModelKeprog->getAllLabkom(),
+            'labkomData' => $this->ModelKepsek->getAllLabkom(),
         ];
-        return view('keprog/v_labkom', $data);
+        return view('kepsek/v_labkom', $data);
     }
 
     public function pengelolaan()
     {
         $data = [
             'title' => 'Data Inventaris Lab',
-            'pengelolaanData' => $this->ModelKeprog->getAllPengelolaan(),
+            'pengelolaanData' => $this->ModelKepsek->getAllPengelolaan(),
         ];
-        return view('keprog/v_pengelolaan', $data);
+        return view('kepsek/v_pengelolaan', $data);
     }
 
     public function pengajuan()
     {
         $data = [
             'title' => 'Data Pengajuan Barang',
-            'pengajuanData' => $this->ModelKeprog->allData(),
+            'pengajuanData' => $this->ModelKepsek->allData(),
         ];
-        return view('keprog/v_pengajuan', $data);
+        return view('kepsek/v_pengajuan', $data);
     }
 
     public function verif($id)
@@ -58,7 +58,7 @@ class Keprog extends BaseController
             'verifikasi_keprog' => 1,
             'status' => "Sudah diverifikasi Kepala program"
         ];
-        $this->ModelKeprog->verifPengajuan($data);
+        $this->ModelKepsek->verifPengajuan($data);
         session()->setFlashdata('pesan', 'Pengajuan Barang Berhasil Disetujui');
         echo "<script>history.go(-1);</script>";
         exit();
@@ -68,19 +68,19 @@ class Keprog extends BaseController
     {
         $data = [
             'title' => 'Data Perbaikan Barang',
-            'perbaikanData' => $this->ModelKeprog->perbaikanData(),
+            'perbaikanData' => $this->ModelKepsek->perbaikanData(),
         ];
-        return view('keprog/v_perbaikan', $data);
+        return view('kepsek/v_perbaikan', $data);
     }
 
     public function editPerbaikan($id)
     {
         $data = [
             'title' => 'Edit Data',
-            'd' => $this->ModelKeprog->detailDataPerbaikan($id) // Ambil data spesifik
+            'd' => $this->ModelKepsek->detailDataPerbaikan($id) // Ambil data spesifik
         ];
 
-        return view('keprog/v_edit_perbaikan', $data);
+        return view('kepsek/v_edit_perbaikan', $data);
     }
 
     public function updatePerbaikan($id)
@@ -108,13 +108,13 @@ class Keprog extends BaseController
                 'catatan' => $this->request->getPost('catatan'),
             ];
 
-            $this->ModelKeprog->editPerbaikan($data);
+            $this->ModelKepsek->editPerbaikan($data);
             session()->setFlashdata('pesan', 'Data berhasil diubah');
-            return redirect()->to(base_url('keprog/perbaikan'));
+            return redirect()->to(base_url('kepsek/perbaikan'));
         } else {
             // Jika tidak valid
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('keprog/editPerbaikan/' . $id));
+            return redirect()->to(base_url('kepsek/editPerbaikan/' . $id));
         }
     }
 

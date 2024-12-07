@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ModelKeprog  extends Model
+class ModelKepsek  extends Model
 {
     public function jmlLabkom()
     {
@@ -70,7 +70,7 @@ class ModelKeprog  extends Model
             ->join('data_kategori_barang', 'data_pengelolaan_barang.id_kategori_barang = data_kategori_barang.id', 'left')
             ->join('data_labkom', 'data_pengelolaan_barang.id_labkom = data_labkom.id', 'left')
             ->where('data_pengelolaan_barang.kondisi', 2)
-            ->whereIn('data_pengelolaan_barang.status', [2, 3, 4, 5]) 
+            ->whereIn('data_pengelolaan_barang.status', [3, 5]) 
             ->orderBy('data_pengelolaan_barang.id', 'ASC')
             ->get()->getResultArray();
     }

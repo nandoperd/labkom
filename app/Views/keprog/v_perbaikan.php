@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Edit Pengelolaan Barang</title>
+  <title>Data Perbaikan Barang</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -118,7 +118,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1> Edit Data Pengelolaan Barang</h1>
+            <h1>Data Perbaikan Barang</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -126,62 +126,78 @@
 
     <!-- Main content -->
     <section class="content">
-    <div class="container-fluid">
+      <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <?php
-                        if (session()->getFlashdata('pesan')) {
-                            echo '<div class="alert alert-success" role="alert">';
-                            echo session()->getFlashdata('pesan');
-                            echo '</div>';
-                        }
-                        if (session()->getFlashdata('errors')) {
-                            echo '<div class="alert alert-danger" role="alert">';
-                            echo '<ul>';
-                            foreach (session()->getFlashdata('errors') as $error) {
-                                echo '<li>' . $error . '</li>';
-                            }
-                            echo '</ul>';
-                            echo '</div>';
-                        }
-                        ?>
-                        
-                        <?php echo form_open('pengelolaan/update/' . $d['id']); ?>
-
-                        <div class="form-group">
-                            <label>Kondisi Barang</label>
-                            <select class="form-control select2" name="kondisi" required>
-                                <option value="">--Pilih Kondisi--</option>
-                                <option value="2" <?= $d['kondisi'] == 2 ? 'selected' : '' ?>>Rusak</option>
-                                <option value="3" <?= $d['kondisi'] == 3 ? 'selected' : '' ?>>Tidak Digunakan</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Tanggal Barang Keluar</label>
-                            <input name="tgl_barang_keluar" type="date" class="form-control" value="<?= $d['tgl_barang_keluar'] ?>" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Catatan</label>
-                            <input name="catatan" class="form-control" placeholder="Catatan.." value="<?= $d['catatan'] ?>" required>
-                        </div>
-
-                        <div class="form-footer">
-                            <button type="submit" class="btn btn-success">Update</button>
-                            <a href="<?= base_url('pengelolaan') ?>" class="btn btn-danger">Kembali</a>
-                        </div>
-
-                        <?php echo form_close(); ?>
-                    </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="table-responsive">
+                <table id="example1" class="table table-bordered table-striped">
+                <?php
+                if (session()->getFlashdata('pesan')) {
+                    echo '<div class="alert alert-success" role="alert">';
+                    echo session()->getFlashdata('pesan');
+                    echo '</div>';
+                }
+                ?>
+                  <thead>
+                  <tr>
+                    <th class="text-center">No</th>
+                    <th>Labkom</th>
+                    <th>Nama Barang</th>
+                    <th>Kategori Barang</th>
+                    <!-- <th>Sumber Pengadaan</th> -->
+                    <th>Tanggal Masuk/Keluar</th>
+                    <th>Status</th>
+                    <th>Catatan</th>
+                    <th class="text-center">Aksi</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    <?php
+                    $no = 1;
+                    foreach ($perbaikanData as $key => $value) { ?>
+                  <tr>
+                    <td class="text-center"><?= $no++ ?></td>
+                    <td><?= $value['labkom_nama'] ?></td>
+                    <td><?= $value['nama_barang'] ?></td>
+                    <td><?= $value['nama_kategori_barang'] ?></td>
+                    <!-- <td><?= $value['kd_perolehan_brg'] ?></td> -->
+                    <td><?= $value['tgl_barang_masuk'] ?> / <?= $value['tgl_barang_keluar'] ?></td>
+                    <td>
+                      <?php if ($value['status'] == 2): ?>
+                          <span class="badge bg-secondary">Menunggu Persetujuan</span>
+                      <?php elseif ($value['status'] == 3): ?>
+                          <span class="badge bg-info">Menunggu Persetujuan Kepala Sekolah</span>
+                      <?php elseif ($value['status'] == 4): ?>
+                          <span class="badge bg-danger">Pengajuan Ditolak</span>
+                      <?php elseif ($value['status'] == 5): ?>
+                          <span class="badge bg-success">Pengajuan Disetujui</span>
+                      <?php else: ?>
+                          <span class="badge bg-secondary">Tidak Digunakan</span>
+                      <?php endif; ?>
+                    </td>
+                    <td><?= $value['catatan'] ?></td>
+                    <td class="text-center">
+                      <a class="btn btn-success btn-sm" href="<?= base_url('keprog/editPerbaikan/' . $value['id']) ?>"><i class="fas fa-arrow-alt-circle-right"></i></a>
+                    </td>
+                  </tr>
+                  <?php } ?>
+                  </tfoot>
+                </table>
                 </div>
+              </div>
+              <!-- /.card-body -->
             </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
         </div>
-    </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
     </section>
-
+    <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">

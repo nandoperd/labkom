@@ -90,10 +90,24 @@
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('keprog/pengajuan') ?>" class="nav-link">
-        <i class="nav-icon fas fa-tasks"></i>
-        <p>Pengajuan Barang</p>
+      <a href="#" class="nav-link">
+        <i class="nav-icon fas fa-file-import"></i>
+        <p>Pengajuan Barang<i class="right fas fa-angle-right"></i></p>
       </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="<?= base_url('keprog/perbaikan') ?>" class="nav-link">
+              <i class="nav-icon fas fa-tools"></i>
+              <p>Perbaikan Barang</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url('keprog/pengajuan') ?>" class="nav-link">
+              <i class="nav-icon fas fa-cart-plus"></i>
+              <p>Pengajuan Barang Baru</p>
+            </a>
+          </li>
+        </ul>
     </li>
     <li class="nav-item">
       <a href="<?= base_url('auth/logout') ?>" class="nav-link">

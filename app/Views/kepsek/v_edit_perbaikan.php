@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Edit Pengelolaan Barang</title>
+  <title>Data Perbaikan Barang</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -118,14 +118,14 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1> Edit Data Pengelolaan Barang</h1>
+            <h1>Data Pengajuan Perbaikan Barang</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
     </section>
 
     <!-- Main content -->
-    <section class="content">
+<section class="content">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -148,20 +148,15 @@
                         }
                         ?>
                         
-                        <?php echo form_open('pengelolaan/update/' . $d['id']); ?>
+                        <?php echo form_open('keprog/updatePerbaikan/' . $d['id']); ?>
 
                         <div class="form-group">
-                            <label>Kondisi Barang</label>
-                            <select class="form-control select2" name="kondisi" required>
-                                <option value="">--Pilih Kondisi--</option>
-                                <option value="2" <?= $d['kondisi'] == 2 ? 'selected' : '' ?>>Rusak</option>
-                                <option value="3" <?= $d['kondisi'] == 3 ? 'selected' : '' ?>>Tidak Digunakan</option>
+                            <label>Persetujuan Perbaikan Barang</label>
+                            <select class="form-control select2" name="status" required>
+                                <option value="">--Pilih Persetujuan Perbaikan Barang--</option>
+                                <option value="5">Disetujui</option>
+                                <option value="4">Ditolak</option>
                             </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Tanggal Barang Keluar</label>
-                            <input name="tgl_barang_keluar" type="date" class="form-control" value="<?= $d['tgl_barang_keluar'] ?>" required>
                         </div>
 
                         <div class="form-group">
@@ -171,7 +166,7 @@
 
                         <div class="form-footer">
                             <button type="submit" class="btn btn-success">Update</button>
-                            <a href="<?= base_url('pengelolaan') ?>" class="btn btn-danger">Kembali</a>
+                            <a href="<?= base_url('keprog/perbaikan') ?>" class="btn btn-danger">Kembali</a>
                         </div>
 
                         <?php echo form_close(); ?>
@@ -181,7 +176,6 @@
         </div>
     </div>
     </section>
-
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">

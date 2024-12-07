@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin Labkom</title>
+  <title>Kepala Sekolah</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -72,41 +72,21 @@
     <!-- Add icons to the links using the .nav-icon class
          with font-awesome or any other icon font library -->
     <li class="nav-item">
-      <a href="<?= base_url('admin') ?>" class="nav-link">
+      <a href="<?= base_url('kepsek') ?>" class="nav-link">
         <i class="nav-icon fas fa-home"></i>
         <p>Beranda</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('labkom') ?>" class="nav-link">
+      <a href="<?= base_url('kepsek/labkom') ?>" class="nav-link">
         <i class="nav-icon fas fa-desktop"></i>
         <p>Data Labkom</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link">
-        <i class="nav-icon fas fa-database"></i>
-        <p>Master Data<i class="right fas fa-angle-right"></i></p>
-      </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="<?= base_url('kategori') ?>" class="nav-link">
-              <i class="nav-icon fas fa-sitemap"></i>
-              <p>Data Kategori Barang</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="<?= base_url('barang') ?>" class="nav-link">
-              <i class="nav-icon fas fa-boxes"></i>
-              <p>Data Barang</p>
-            </a>
-          </li>
-        </ul>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('pengelolaan') ?>" class="nav-link">
+      <a href="<?= base_url('kepsek/pengelolaan') ?>" class="nav-link">
         <i class="nav-icon fas fa-th-list"></i>
-        <p>Pengelolaan Barang</p>
+        <p>Data Inventaris Lab</p>
       </a>
     </li>
     <li class="nav-item">
@@ -116,35 +96,15 @@
       </a>
         <ul class="nav nav-treeview">
           <li class="nav-item">
-            <a href="<?= base_url('perbaikan') ?>" class="nav-link">
+            <a href="<?= base_url('kepsek/perbaikan') ?>" class="nav-link">
               <i class="nav-icon fas fa-tools"></i>
               <p>Perbaikan Barang</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= base_url('pengajuan') ?>" class="nav-link">
+            <a href="<?= base_url('kepsek/pengajuan') ?>" class="nav-link">
               <i class="nav-icon fas fa-cart-plus"></i>
               <p>Pengajuan Barang Baru</p>
-            </a>
-          </li>
-        </ul>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link">
-        <i class="nav-icon fas fa-file-invoice"></i>
-        <p>Laporan<i class="right fas fa-angle-right"></i></p>
-      </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="<?= base_url('kategori') ?>" class="nav-link">
-              <i class="nav-icon far fa-file-alt"></i>
-              <p>Perbaikan Barang</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="<?= base_url('pengajuan') ?>" class="nav-link">
-              <i class="nav-icon fas fa-file-alt"></i>
-              <p>Pengajuan Barang</p>
             </a>
           </li>
         </ul>
@@ -178,35 +138,7 @@
             <div class="icon">
               <i class="fas fa-desktop"></i>
             </div>
-            <a href="<?= base_url('labkom') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-6">
-          <!-- small box -->
-          <div class="small-box bg-success">
-            <div class="inner">
-              <h3><?= $jmlKategori;?></h3>
-              <p>Data Kategori Barang</p>
-            </div>
-            <div class="icon">
-              <i class="fas fa-sitemap"></i>
-            </div>
-            <a href="<?= base_url('kategori') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-6">
-          <!-- small box -->
-          <div class="small-box bg-secondary">
-            <div class="inner">
-              <h3><?= $jmlBarang;?></h3>
-              <p>Data Barang</p>
-            </div>
-            <div class="icon">
-              <i class="fas fa-boxes"></i>
-            </div>
-            <a href="<?= base_url('barang') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?= base_url('kepsek/labkom') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -215,12 +147,12 @@
           <div class="small-box bg-warning">
             <div class="inner">
               <h3><?= $jmlPengelolaan;?></h3>
-              <p>Pengelolaan Barang</p>
+              <p>Data Inventaris Lab</p>
             </div>
             <div class="icon">
               <i class="fas fa-th-list"></i>
             </div>
-            <a href="<?= base_url('pengelolaan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?= base_url('kepsek/pengelolaan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -234,7 +166,7 @@
             <div class="icon">
               <i class="fas fa-tasks"></i>
             </div>
-            <a href="<?= base_url('pengajuan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?= base_url('kepsek/pengajuan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
       </div>
