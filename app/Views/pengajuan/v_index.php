@@ -174,18 +174,25 @@
                       <?php elseif ($value['status'] == 2): ?>
                           <span class="badge bg-info">Menunggu Persetujuan Kepala Sekolah</span>
                       <?php elseif ($value['status'] == 3): ?>
-                          <span class="badge bg-danger">Pengajuan Ditolak</span>
+                          <span class="badge bg-danger">Pengajuan Ditolak Kepala Sekolah</span>
                       <?php elseif ($value['status'] == 4): ?>
                           <span class="badge bg-success">Pengajuan Disetujui</span>
+                      <?php elseif ($value['status'] == 5): ?>
+                          <span class="badge bg-success">Pengajuan Ditolak Kepala Program</span>
+                      <?php elseif ($value['status'] == 6): ?>
+                          <span class="badge bg-success">Data Sudah Diupdate</span>
                       <?php endif; ?>
                     </td>
                     <td class="text-center">
                     <!-- <a class="btn btn-warning btn-sm" href="<?= base_url('pengajuan/edit/' . $value['id'])?>"><i class="fa fa-edit"></i></a> -->
-                    <!-- <a href="<?= base_url('pengajuan/print/' . $value['id']) ?>" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-scroll"></i></a> -->
                     <?php if ($value['status'] == 4): ?>
-                      <a class="btn btn-primary btn-sm" href="<?= base_url('perbaikan/verifData/' . $value['id']) ?>"><i class="fas fa-check-circle"></i> Input Data</a>
+                      <a class="btn btn-primary btn-sm" href="<?= base_url('pengajuan/verifData/' . $value['id']) ?>"><i class="fas fa-check-circle"></i></a>
+                    <?php elseif ($value['status'] == 1 || $value['status'] == 2 ): ?>
+                      <a class="btn btn-info btn-sm" href="#"><i class="fas fa-spinner"></i></a>
+                    <?php elseif ($value['status'] == 3 || $value['status'] == 5 || $value['status'] == 6): ?>
+                      <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id']  ?>"><i class="fa fa-trash"></i></a>
                     <?php else: ?>
-                      <a class="btn btn-success btn-sm" href="<?= base_url('perbaikan/verifAdmin/' . $value['id']) ?>"><i class="fas fa-arrow-alt-circle-right"></i> Ajukan</a>
+                      <a class="btn btn-success btn-sm" href="<?= base_url('perbaikan/verifAdmin/' . $value['id']) ?>"><i class="fas fa-arrow-alt-circle-right"></i></a>
                     <?php endif; ?>
                     <!-- <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id']  ?>"><i class="fa fa-trash"></i></button> -->
                     </td>

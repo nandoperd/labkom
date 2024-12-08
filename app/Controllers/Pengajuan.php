@@ -151,4 +151,27 @@ class Pengajuan extends BaseController
         return redirect()->to(base_url('pengajuan'));
     }
 
+    public function verifData($id)
+    {
+        $dataPengajuan = $this->ModelPengajuan->detailData($id);
+
+        if ($dataPengajuan) {
+            $dataBarang = [
+                'id_kategori_barang' => $dataPengajuan['id_kategori_barang'],
+                'nama_barang' => $dataPengajuan['nama_barang'],
+                'kode_barang' => $dataPengajuan['kode_barang'],
+            ];
+
+            $this->ModelPengajuan->addDataBarang($dataBarang);
+
+            $this->ModelPengajuan->updateStatus($id, 6);
+
+            session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
+        } else {
+            session()->setFlashdata('pesan', 'Data tidak ditemukan');
+        }
+
+        return redirect()->to(base_url('pengajuan'));
+    }
+
 }

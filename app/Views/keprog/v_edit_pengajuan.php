@@ -155,7 +155,7 @@
                             <select class="form-control select2" name="status" required>
                                 <option value="">--Pilih Persetujuan Perbaikan Barang--</option>
                                 <option value="2">Disetujui</option>
-                                <option value="3">Ditolak</option>
+                                <option value="5">Ditolak</option>
                             </select>
                         </div>
 

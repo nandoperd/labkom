@@ -57,4 +57,16 @@ class ModelPengajuan  extends Model
             ->orderBy('data_kategori_barang.nama_kategori_barang', 'ASC')
             ->get()->getResultArray();
     }
+
+    public function addDataBarang($data)
+    {
+        $this->db->table('data_barang')->insert($data);
+    }
+
+    public function updateStatus($id, $status)
+    {
+        $this->db->table('data_pengajuan_barang')
+            ->where('id', $id)
+            ->update(['status' => $status]);
+    }
 }

@@ -160,6 +160,8 @@
                       <?php elseif ($value['status'] == 2): ?>
                           <span class="badge bg-info">Menunggu Persetujuan Kepala Sekolah</span>
                       <?php elseif ($value['status'] == 3): ?>
+                          <span class="badge bg-danger">Pengajuan Ditolak Kepala Sekolah</span>
+                      <?php elseif ($value['status'] == 5): ?>
                           <span class="badge bg-danger">Pengajuan Ditolak</span>
                       <?php elseif ($value['status'] == 4): ?>
                           <span class="badge bg-success">Pengajuan Disetujui</span>
