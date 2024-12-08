@@ -121,8 +121,7 @@
             <h1>Data Pengajuan Barang</h1>
           </div>
           <div class="col-sm-6 text-right">
-              <button class="btn bg-gradient-success" data-toggle="modal" data-target="#add"><i class="fas fa-plus"></i> Pengajuan Barang Baru</button>
-              <button class="btn bg-gradient-warning" data-toggle="modal" data-target="#addPengelolaan"><i class="fas fa-plus"></i> Pengajuan Barang</button>
+              <button class="btn bg-gradient-success" data-toggle="modal" data-target="#add"><i class="fas fa-plus"></i> Tambah Data</button>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -152,7 +151,6 @@
                     <th>Nama Barang</th>
                     <th>Sumber</th>
                     <th>Tanggal Pengajuan</th>
-                    <th>Kondisi</th>
                     <th>Catatan</th>
                     <th>Status</th>
                     <th class="text-center">Aksi</th>
@@ -169,13 +167,27 @@
                     <td><?= $value['nama_barang'] ?></td>
                     <td><?= $value['kd_perolehan_brg'] ?></td>
                     <td><?= $value['tgl_barang_masuk'] ?></td>
-                    <td><?= $value['kondisi'] ?></td>
                     <td><?= $value['catatan'] ?></td>
-                    <td><?= $value['status'] ?></td>
+                    <td>
+                      <?php if ($value['status'] == 1): ?>
+                          <span class="badge bg-secondary">Menunggu Persetujuan Kepala Program</span>
+                      <?php elseif ($value['status'] == 2): ?>
+                          <span class="badge bg-info">Menunggu Persetujuan Kepala Sekolah</span>
+                      <?php elseif ($value['status'] == 3): ?>
+                          <span class="badge bg-danger">Pengajuan Ditolak</span>
+                      <?php elseif ($value['status'] == 4): ?>
+                          <span class="badge bg-success">Pengajuan Disetujui</span>
+                      <?php endif; ?>
+                    </td>
                     <td class="text-center">
                     <!-- <a class="btn btn-warning btn-sm" href="<?= base_url('pengajuan/edit/' . $value['id'])?>"><i class="fa fa-edit"></i></a> -->
                     <!-- <a href="<?= base_url('pengajuan/print/' . $value['id']) ?>" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-scroll"></i></a> -->
-                    <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id']  ?>"><i class="fa fa-trash"></i></button>
+                    <?php if ($value['status'] == 4): ?>
+                      <a class="btn btn-primary btn-sm" href="<?= base_url('perbaikan/verifData/' . $value['id']) ?>"><i class="fas fa-check-circle"></i> Input Data</a>
+                    <?php else: ?>
+                      <a class="btn btn-success btn-sm" href="<?= base_url('perbaikan/verifAdmin/' . $value['id']) ?>"><i class="fas fa-arrow-alt-circle-right"></i> Ajukan</a>
+                    <?php endif; ?>
+                    <!-- <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id']  ?>"><i class="fa fa-trash"></i></button> -->
                     </td>
                   </tr>
                   <?php } ?>
@@ -251,6 +263,11 @@
                 </div>
 
                 <div class="form-group">
+                    <label>Kode Barang</label>
+                    <input name="kode_barang" class="form-control" placeholder="Nama Barang.." required>
+                </div>
+
+                <div class="form-group">
                     <label>Tanggal Pengajuan</label>
                     <input name="tgl_barang_masuk" type="date" class="form-control" required>
                 </div>
@@ -271,7 +288,7 @@
                     <input name="catatan" class="form-control" placeholder="Catatan.." required>
                 </div>
 
-                <input type="hidden" name="status" value="Belum diverifikasi Kepala program dan Kepala sekolah">
+                <input type="hidden" name="status" value = 1>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
@@ -347,7 +364,7 @@
 
                     </div>
                     <div class="modal-footer">
-                      <a href="<?= base_url('labkom/delete/' . $value['id']) ?>" class="btn btn-success">Hapus</a>
+                      <a href="<?= base_url('pengajuan/delete/' . $value['id']) ?>" class="btn btn-success">Hapus</a>
                         <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Tutup</button>
                     </div>
                 </div>

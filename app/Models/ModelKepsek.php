@@ -75,14 +75,36 @@ class ModelKepsek  extends Model
             ->get()->getResultArray();
     }
 
+    public function pengajuanData()
+    {
+        return $this->db->table('data_pengajuan_barang')
+            ->select('data_pengajuan_barang.*, data_kategori_barang.nama_kategori_barang, data_labkom.nama as labkom_nama')
+            ->join('data_kategori_barang', 'data_pengajuan_barang.id_kategori_barang = data_kategori_barang.id', 'left')
+            ->join('data_labkom', 'data_pengajuan_barang.id_labkom = data_labkom.id', 'left')
+            ->whereIn('data_pengajuan_barang.status', [2, 3, 4]) 
+            ->orderBy('data_pengajuan_barang.id', 'ASC')
+            ->get()->getResultArray();
+    }
+
     public function detailDataPerbaikan($id)
     {
         return $this->db->table('data_pengelolaan_barang')->where('id', $id)->get()->getRowArray();
     }
 
+    public function detailDataPengajuan($id)
+    {
+        return $this->db->table('data_pengajuan_barang')->where('id', $id)->get()->getRowArray();
+    }
+
     public function editPerbaikan($data)
     {
         $this->db->table('data_pengelolaan_barang')
+            ->where('id', $data['id'])->update($data);
+    }
+
+    public function editPengajuan($data)
+    {
+        $this->db->table('data_pengajuan_barang')
             ->where('id', $data['id'])->update($data);
     }
 }

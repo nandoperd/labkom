@@ -137,7 +137,6 @@
                     <th>Nama Barang</th>
                     <th>Sumber</th>
                     <th>Tanggal Pengajuan</th>
-                    <!-- <th>Kondisi</th> -->
                     <th>Catatan</th>
                     <th>Status</th>
                     <th class="text-center">Aksi</th>
@@ -154,19 +153,18 @@
                     <td><?= $value['nama_barang'] ?></td>
                     <td><?= $value['kd_perolehan_brg'] ?></td>
                     <td><?= $value['tgl_barang_masuk'] ?></td>
-                    <!-- <td><?= $value['kondisi'] ?></td> -->
                     <td><?= $value['catatan'] ?></td>
-                    <!-- <td><?= $value['status'] ?></td> -->
-                    <td class="text-center">
-                    <?php if ($value['verifikasi_keprog'] == 1) {
-                                    echo '<i class="far fa-check-circle"></i>';
-                                } elseif ($value['verifikasi_keprog'] == 0 or NULL) {
-                                    echo '<i class="far fa-circle"></i>';
-                                } ?>
+                    <td>
+                      <?php if ($value['status'] == 2): ?>
+                          <span class="badge bg-secondary">Menunggu Persetujuan</span>
+                      <?php elseif ($value['status'] == 3): ?>
+                          <span class="badge bg-danger">Pengajuan Ditolak</span>
+                      <?php elseif ($value['status'] == 4): ?>
+                          <span class="badge bg-success">Pengajuan Disetujui</span>
+                      <?php endif; ?>
                     </td>
                     <td class="text-center">
-                    <!-- <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#delete<?= $value['id']  ?>"><i class="fas fa-check"></i></button> -->
-                    <a href="<?= base_url('keprog/verif/' . $value['id']) ?>" class="btn btn-success btn-sm"><i class="fas fa-check"></i></a>
+                    <a class="btn btn-success btn-sm" href="<?= base_url('kepsek/editPengajuan/' . $value['id']) ?>"><i class="fas fa-arrow-alt-circle-right"></i></a>
                     </td>
                   </tr>
                   <?php } ?>

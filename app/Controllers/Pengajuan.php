@@ -55,6 +55,13 @@ class Pengajuan extends BaseController
                     'required' => '{field} Wajib diisi!',
                 ]
             ],
+            'kode_barang' => [
+                'label' => 'Nama barang',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib diisi!',
+                ]
+            ],
             'tgl_barang_masuk' => [
                 'label' => 'Tanggal pengajuan',
                 'rules' => 'required',
@@ -81,13 +88,12 @@ class Pengajuan extends BaseController
         ])) {
             //if valid
             $data = [
-                'id_barang' => $this->request->getPost('id_barang'),
                 'id_labkom' => $this->request->getPost('id_labkom'),
                 'id_kategori_barang' => $this->request->getPost('id_kategori_barang'),
                 'nama_barang' => $this->request->getPost('nama_barang'),
+                'kode_barang' => $this->request->getPost('kode_barang'),
                 'tgl_barang_masuk' => $this->request->getPost('tgl_barang_masuk'),
                 'kd_perolehan_brg' => $this->request->getPost('kd_perolehan_brg'),
-                'kondisi' => $this->request->getPost('kondisi'),
                 'catatan' => $this->request->getPost('catatan'),
                 'status' => $this->request->getPost('status')
             ];

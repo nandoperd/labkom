@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?= $title ?></title>
+  <title>Data Pengajuan Barang</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -63,25 +63,37 @@
     <!-- Add icons to the links using the .nav-icon class
          with font-awesome or any other icon font library -->
     <li class="nav-item">
-      <a href="<?= base_url('keprog') ?>" class="nav-link">
+      <a href="<?= base_url('admin') ?>" class="nav-link">
         <i class="nav-icon fas fa-home"></i>
         <p>Beranda</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('keprog/labkom') ?>" class="nav-link">
+      <a href="<?= base_url('labkom') ?>" class="nav-link">
         <i class="nav-icon fas fa-desktop"></i>
         <p>Data Labkom</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('keprog/pengelolaan') ?>" class="nav-link">
-        <i class="nav-icon fas fa-th-list"></i>
-        <p>Data Inventaris Lab</p>
+      <a href="<?= base_url('kategori') ?>" class="nav-link">
+        <i class="nav-icon fas fa-sitemap"></i>
+        <p>Data Kategori Barang</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('keprog/pengajuan') ?>" class="nav-link">
+      <a href="<?= base_url('barang') ?>" class="nav-link">
+        <i class="nav-icon fas fa-boxes"></i>
+        <p>Data Barang</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="<?= base_url('pengelolaan') ?>" class="nav-link">
+        <i class="nav-icon fas fa-th-list"></i>
+        <p>Pengelolaan Barang</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="<?= base_url('pengajuan') ?>" class="nav-link">
         <i class="nav-icon fas fa-tasks"></i>
         <p>Pengajuan Barang</p>
       </a>
@@ -106,85 +118,64 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Data Pengajuan Barang</h1>
+            <h1>Data Pengajuan Barang Baru</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
     </section>
 
     <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
+<section class="content">
+    <div class="container-fluid">
         <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="table-responsive">
-                <table id="example1" class="table table-bordered table-striped">
-                <?php
-                if (session()->getFlashdata('pesan')) {
-                    echo '<div class="alert alert-success" role="alert">';
-                    echo session()->getFlashdata('pesan');
-                    echo '</div>';
-                }
-                ?>
-                  <thead>
-                  <tr>
-                    <th class="text-center">No</th>
-                    <th>Labkom</th>
-                    <!-- <th>Kode Barang</th> -->
-                    <th>Kategori Barang</th>
-                    <th>Nama Barang</th>
-                    <th>Sumber</th>
-                    <th>Tanggal Pengajuan</th>
-                    <th>Catatan</th>
-                    <th>Status</th>
-                    <th class="text-center">Aksi</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                    <?php
-                    $no = 1;
-                    foreach ($pengajuanData as $key => $value) { ?>
-                  <tr>
-                    <td class="text-center"><?= $no++ ?></td>
-                    <td><?= $value['labkom_nama'] ?></td>
-                    <td><?= $value['nama_kategori_barang'] ?></td>
-                    <td><?= $value['nama_barang'] ?></td>
-                    <td><?= $value['kd_perolehan_brg'] ?></td>
-                    <td><?= $value['tgl_barang_masuk'] ?></td>
-                    <td><?= $value['catatan'] ?></td>
-                    <td>
-                      <?php if ($value['status'] == 1): ?>
-                          <span class="badge bg-secondary">Menunggu Persetujuan</span>
-                      <?php elseif ($value['status'] == 2): ?>
-                          <span class="badge bg-info">Menunggu Persetujuan Kepala Sekolah</span>
-                      <?php elseif ($value['status'] == 3): ?>
-                          <span class="badge bg-danger">Pengajuan Ditolak</span>
-                      <?php elseif ($value['status'] == 4): ?>
-                          <span class="badge bg-success">Pengajuan Disetujui</span>
-                      <?php endif; ?>
-                    </td>
-                    <td class="text-center">
-                    <a class="btn btn-success btn-sm" href="<?= base_url('keprog/editPengajuan/' . $value['id']) ?>"><i class="fas fa-arrow-alt-circle-right"></i></a>
-                    </td>
-                  </tr>
-                  <?php } ?>
-                  </tfoot>
-                </table>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <?php
+                        if (session()->getFlashdata('pesan')) {
+                            echo '<div class="alert alert-success" role="alert">';
+                            echo session()->getFlashdata('pesan');
+                            echo '</div>';
+                        }
+                        if (session()->getFlashdata('errors')) {
+                            echo '<div class="alert alert-danger" role="alert">';
+                            echo '<ul>';
+                            foreach (session()->getFlashdata('errors') as $error) {
+                                echo '<li>' . $error . '</li>';
+                            }
+                            echo '</ul>';
+                            echo '</div>';
+                        }
+                        ?>
+                        
+                        <?php echo form_open('kepsek/updatePengajuan/' . $d['id']); ?>
+
+                        <div class="form-group">
+                            <label>Persetujuan Pengajuan Barang Baru</label>
+                            <select class="form-control select2" name="status" required>
+                                <option value="">--Pilih Persetujuan Perbaikan Barang--</option>
+                                <option value="4">Disetujui</option>
+                                <option value="3">Ditolak</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Catatan</label>
+                            <input name="catatan" class="form-control" placeholder="Catatan.." value="<?= $d['catatan'] ?>" required>
+                        </div>
+
+                        <div class="form-footer">
+                            <button type="submit" class="btn btn-success">Update</button>
+                            <a href="<?= base_url('kepsek/pengajuan') ?>" class="btn btn-danger">Kembali</a>
+                        </div>
+
+                        <?php echo form_close(); ?>
+                    </div>
                 </div>
-              </div>
-              <!-- /.card-body -->
             </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
         </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container-fluid -->
+    </div>
     </section>
-    <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">

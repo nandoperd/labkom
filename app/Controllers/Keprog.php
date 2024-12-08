@@ -118,4 +118,49 @@ class Keprog extends BaseController
         }
     }
 
+    public function editPengajuan($id)
+    {
+        $data = [
+            'title' => 'Edit Data',
+            'd' => $this->ModelKeprog->detailDataPengajuan($id) // Ambil data spesifik
+        ];
+
+        return view('keprog/v_edit_pengajuan', $data);
+    }
+
+    public function updatePengajuan($id)
+    {
+        if ($this->validate([
+            'status' => [
+                'label' => 'Persetujuan',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib diisi!'
+                ]
+            ],
+            'catatan' => [
+                'label' => 'Catatan',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib diisi!'
+                ]
+            ],
+        ])) {
+            // Jika valid
+            $data = [
+                'id' => $id,
+                'status' => $this->request->getPost('status'),
+                'catatan' => $this->request->getPost('catatan'),
+            ];
+
+            $this->ModelKeprog->editPengajuan($data);
+            session()->setFlashdata('pesan', 'Data berhasil diubah');
+            return redirect()->to(base_url('keprog/pengajuan'));
+        } else {
+            // Jika tidak valid
+            session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
+            return redirect()->to(base_url('keprog/editPengajuan/' . $id));
+        }
+    }
+
 }
