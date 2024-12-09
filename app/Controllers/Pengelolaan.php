@@ -95,14 +95,14 @@ class Pengelolaan extends BaseController
     }
 
     public function edit($id)
-{
-    $data = [
-        'title' => 'Edit Data',
-        'd' => $this->ModelPengelolaan->detailData($id) // Ambil data spesifik
-    ];
+    {
+        $data = [
+            'title' => 'Edit Data',
+            'd' => $this->ModelPengelolaan->detailData($id) // Ambil data spesifik
+        ];
 
-    return view('pengelolaan/v_edit', $data);
-}
+        return view('pengelolaan/v_edit', $data);
+    }
 
 public function update($id)
 {

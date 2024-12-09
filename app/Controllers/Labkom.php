@@ -102,4 +102,18 @@ class Labkom extends BaseController
         return redirect()->to(base_url('labkom'));
     }
 
+    public function detail($id)
+    {
+        $data_labkom = $this->ModelLabkom->detailData($id); // Ambil data spesifik dari data_labkom
+        $data_pengelolaan = $this->ModelLabkom->getDataPengelolaan($id); // Ambil data dari data_pengelolaan_barang
+
+        $data = [
+            'title' => 'Detail Data',
+            'd' => $data_labkom, // Data dari data_labkom
+            'pengelolaan' => $data_pengelolaan // Data dari data_pengelolaan_barang
+        ];
+
+        return view('labkom/v_detail', $data);
+    }
+
 }

@@ -1,0 +1,101 @@
+INFO - 2024-12-09 14:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 16:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 17:13:36 --> Undefined variable $labkom
+in APPPATH\Views\labkom\v_detail.php on line 236.
+ 1 APPPATH\Views\labkom\v_detail.php(236): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $labkom', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\labkom\\v_detail.php', 236)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\labkom\\v_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('labkom/v_detail', [], true)
+ 5 APPPATH\Controllers\Labkom.php(116): view('labkom/v_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Labkom->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Labkom))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 17:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 17:20:59 --> Undefined array key "labkom_nama"
+in APPPATH\Views\labkom\v_detail.php on line 166.
+ 1 APPPATH\Views\labkom\v_detail.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "labkom_nama"', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\labkom\\v_detail.php', 166)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\labkom\\v_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('labkom/v_detail', [], true)
+ 5 APPPATH\Controllers\Labkom.php(116): view('labkom/v_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Labkom->detail('4')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Labkom))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 17:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 17:21:52 --> Undefined array key "nama"
+in APPPATH\Views\labkom\v_detail.php on line 166.
+ 1 APPPATH\Views\labkom\v_detail.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\labkom\\v_detail.php', 166)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\labkom\\v_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('labkom/v_detail', [], true)
+ 5 APPPATH\Controllers\Labkom.php(116): view('labkom/v_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Labkom->detail('4')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Labkom))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 17:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 17:22:04 --> Undefined array key "nama_barang"
+in APPPATH\Views\labkom\v_detail.php on line 166.
+ 1 APPPATH\Views\labkom\v_detail.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_barang"', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\labkom\\v_detail.php', 166)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\labkom\\v_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('labkom/v_detail', [], true)
+ 5 APPPATH\Controllers\Labkom.php(116): view('labkom/v_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Labkom->detail('4')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Labkom))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 17:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 17:22:18 --> Undefined array key "labkom_nama"
+in APPPATH\Views\labkom\v_detail.php on line 166.
+ 1 APPPATH\Views\labkom\v_detail.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "labkom_nama"', 'C:\\xampp\\htdocs\\labkom\\app\\Views\\labkom\\v_detail.php', 166)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\labkom\\app\\Views\\labkom\\v_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('labkom/v_detail', [], true)
+ 5 APPPATH\Controllers\Labkom.php(116): view('labkom/v_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Labkom->detail('4')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Labkom))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-09 17:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 17:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
