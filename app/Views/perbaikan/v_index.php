@@ -57,168 +57,212 @@
     <!-- Sidebar -->
     <div class="sidebar">
 
-<!-- Sidebar Menu -->
-<nav class="mt-2">
-  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-    <!-- Add icons to the links using the .nav-icon class
-         with font-awesome or any other icon font library -->
-    <li class="nav-item">
-      <a href="<?= base_url('admin') ?>" class="nav-link">
-        <i class="nav-icon fas fa-home"></i>
-        <p>Beranda</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('labkom') ?>" class="nav-link">
-        <i class="nav-icon fas fa-desktop"></i>
-        <p>Data Labkom</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('kategori') ?>" class="nav-link">
-        <i class="nav-icon fas fa-sitemap"></i>
-        <p>Data Kategori Barang</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('barang') ?>" class="nav-link">
-        <i class="nav-icon fas fa-boxes"></i>
-        <p>Data Barang</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('pengelolaan') ?>" class="nav-link">
-        <i class="nav-icon fas fa-th-list"></i>
-        <p>Pengelolaan Barang</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('pengajuan') ?>" class="nav-link">
-        <i class="nav-icon fas fa-tasks"></i>
-        <p>Pengajuan Barang</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('auth/logout') ?>" class="nav-link">
-        <i class="nav-icon fas fa-sign-out-alt"></i>
-        <p>Keluar</p>
-      </a>
-    </li>
-  </ul>
-</nav>
-<!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Data Perbaikan Barang</h1>
-          </div>
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+              with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="<?= base_url('admin') ?>" class="nav-link">
+              <i class="nav-icon fas fa-home"></i>
+              <p>Beranda</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url('labkom') ?>" class="nav-link">
+              <i class="nav-icon fas fa-desktop"></i>
+              <p>Data Labkom</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-database"></i>
+              <p>Master Data<i class="right fas fa-angle-right"></i></p>
+            </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?= base_url('kategori') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-sitemap"></i>
+                    <p>Data Kategori Barang</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= base_url('barang') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-boxes"></i>
+                    <p>Data Barang</p>
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url('pengelolaan') ?>" class="nav-link">
+              <i class="nav-icon fas fa-th-list"></i>
+              <p>Pengelolaan Barang</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-file-import"></i>
+              <p>Pengajuan Barang<i class="right fas fa-angle-right"></i></p>
+            </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?= base_url('perbaikan') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-tools"></i>
+                    <p>Perbaikan Barang</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= base_url('pengajuan') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-cart-plus"></i>
+                    <p>Pengajuan Barang Baru</p>
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-file-invoice"></i>
+              <p>Laporan<i class="right fas fa-angle-right"></i></p>
+            </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?= base_url('perbaikan/laporan') ?>" class="nav-link">
+                    <i class="nav-icon far fa-file-alt"></i>
+                    <p>Perbaikan Barang</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= base_url('pengajuan/laporan') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-file-alt"></i>
+                    <p>Pengajuan Barang</p>
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url('auth/logout') ?>" class="nav-link">
+              <i class="nav-icon fas fa-sign-out-alt"></i>
+              <p>Keluar</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
         </div>
-      </div><!-- /.container-fluid -->
-    </section>
+        <!-- /.sidebar -->
+      </aside>
 
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="table-responsive">
-                <table id="example1" class="table table-bordered table-striped">
-                <?php
-                if (session()->getFlashdata('pesan')) {
-                    echo '<div class="alert alert-success" role="alert">';
-                    echo session()->getFlashdata('pesan');
-                    echo '</div>';
-                }
-                ?>
-                  <thead>
-                  <tr>
-                    <th class="text-center">No</th>
-                    <th>Labkom</th>
-                    <th>Nama Barang</th>
-                    <th>Kategori Barang</th>
-                    <!-- <th>Sumber Pengadaan</th> -->
-                    <th>Tanggal Masuk/Keluar</th>
-                    <th>Status</th>
-                    <th>Catatan</th>
-                    <th class="text-center">Aksi</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                    <?php
-                    $no = 1;
-                    foreach ($d as $key => $value) { ?>
-                  <tr>
-                    <td class="text-center"><?= $no++ ?></td>
-                    <td><?= $value['labkom_nama'] ?></td>
-                    <td><?= $value['nama_barang'] ?></td>
-                    <td><?= $value['nama_kategori_barang'] ?></td>
-                    <!-- <td><?= $value['kd_perolehan_brg'] ?></td> -->
-                    <td><?= $value['tgl_barang_masuk'] ?> / <?= $value['tgl_barang_keluar'] ?></td>
-                    <td>
-                      <?php if ($value['status'] == 1): ?>
-                          <span class="badge bg-secondary">Belum Diajukan</span>
-                      <?php elseif ($value['status'] == 2): ?>
-                          <span class="badge bg-info">Menunggu Persetujuan Kepala Program</span>
-                      <?php elseif ($value['status'] == 3): ?>
-                          <span class="badge bg-info">Menunggu Persetujuan Kepala Sekolah</span>
-                      <?php elseif ($value['status'] == 4): ?>
-                          <span class="badge bg-danger">Pengajuan Ditolak</span>
-                      <?php elseif ($value['status'] == 5): ?>
-                          <span class="badge bg-success">Pengajuan Disetujui</span>
-                      <?php else: ?>
-                          <span class="badge bg-secondary">Tidak Digunakan</span>
-                      <?php endif; ?>
-                    </td>
-                    <td><?= $value['catatan'] ?></td>
-                    <td class="text-center">
-                        <?php if ($value['status'] == 5): ?>
-                            <a class="btn btn-primary btn-sm" href="<?= base_url('perbaikan/verifData/' . $value['id']) ?>"><i class="fas fa-check-circle"></i></a>
-                        <?php else: ?>
-                            <a class="btn btn-success btn-sm" href="<?= base_url('perbaikan/verifAdmin/' . $value['id']) ?>"><i class="fas fa-arrow-alt-circle-right"></i></a>
-                        <?php endif; ?>
-                    </td>
-                  </tr>
-                  <?php } ?>
-                  </tfoot>
-                </table>
-                </div>
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1>Data Perbaikan Barang</h1>
               </div>
-              <!-- /.card-body -->
             </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <!-- <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.2.0
-    </div> -->
-    <strong>SMK Muhammadiyah 2 Cileungsi</strong>
-  </footer>
+          </div><!-- /.container-fluid -->
+        </section>
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
+        <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="table-responsive">
+                    <table id="example1" class="table table-bordered table-striped">
+                    <?php
+                    if (session()->getFlashdata('pesan')) {
+                        echo '<div class="alert alert-success" role="alert">';
+                        echo session()->getFlashdata('pesan');
+                        echo '</div>';
+                    }
+                    ?>
+                      <thead>
+                      <tr>
+                        <th class="text-center">No</th>
+                        <th>Labkom</th>
+                        <th>Nama Barang</th>
+                        <th>Kategori Barang</th>
+                        <!-- <th>Sumber Pengadaan</th> -->
+                        <th>Tanggal Masuk/Keluar</th>
+                        <th>Status</th>
+                        <th>Catatan</th>
+                        <th class="text-center">Aksi</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <?php
+                        $no = 1;
+                        foreach ($d as $key => $value) { ?>
+                      <tr>
+                        <td class="text-center"><?= $no++ ?></td>
+                        <td><?= $value['labkom_nama'] ?></td>
+                        <td><?= $value['nama_barang'] ?></td>
+                        <td><?= $value['nama_kategori_barang'] ?></td>
+                        <!-- <td><?= $value['kd_perolehan_brg'] ?></td> -->
+                        <td><?= $value['tgl_barang_masuk'] ?> / <?= $value['tgl_barang_keluar'] ?></td>
+                        <td>
+                          <?php if ($value['status'] == 1): ?>
+                              <span class="badge bg-secondary">Belum Diajukan</span>
+                          <?php elseif ($value['status'] == 2): ?>
+                              <span class="badge bg-info">Menunggu Persetujuan Kepala Program</span>
+                          <?php elseif ($value['status'] == 3): ?>
+                              <span class="badge bg-info">Menunggu Persetujuan Kepala Sekolah</span>
+                          <?php elseif ($value['status'] == 4): ?>
+                              <span class="badge bg-danger">Pengajuan Ditolak</span>
+                          <?php elseif ($value['status'] == 5): ?>
+                              <span class="badge bg-success">Pengajuan Disetujui</span>
+                          <?php else: ?>
+                              <span class="badge bg-secondary">Tidak Digunakan</span>
+                          <?php endif; ?>
+                        </td>
+                        <td><?= $value['catatan'] ?></td>
+                        <td class="text-center">
+                            <?php if ($value['status'] == 5): ?>
+                                <a class="btn btn-primary btn-sm" href="<?= base_url('perbaikan/verifData/' . $value['id']) ?>"><i class="fas fa-check-circle"></i></a>
+                            <?php elseif ($value['status'] == 2 || $value['status'] == 3): ?>
+                                <a class=""><i class="fas fa-spinner"></i></a>
+                            <?php else: ?>
+                                <a class="btn btn-success btn-sm" href="<?= base_url('perbaikan/verifAdmin/' . $value['id']) ?>"><i class="fas fa-arrow-alt-circle-right"></i></a>
+                            <?php endif; ?>
+                        </td>
+                      </tr>
+                      <?php } ?>
+                      </tfoot>
+                    </table>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
+      <footer class="main-footer">
+        <!-- <div class="float-right d-none d-sm-block">
+          <b>Version</b> 3.2.0
+        </div> -->
+        <strong>SMK Muhammadiyah 2 Cileungsi</strong>
+      </footer>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+      </aside>
+      <!-- /.control-sidebar -->
+    </div>
 <!-- ./wrapper -->
 
 <!-- scripts -->

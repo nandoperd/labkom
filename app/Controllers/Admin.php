@@ -20,6 +20,7 @@ class Admin extends BaseController
             'jmlKategori' => $this->ModelAdmin->jmlKategori(),
             'jmlBarang' => $this->ModelAdmin->jmlBarang(),
             'jmlPengelolaan' => $this->ModelAdmin->jmlPengelolaan(),
+            'jmlPerbaikan' => $this->ModelAdmin->jmlPerbaikan(),
             'jmlPengajuan' => $this->ModelAdmin->jmlPengajuan(),
         ];
         return view('admin/v_index', $data);

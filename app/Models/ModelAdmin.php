@@ -30,6 +30,13 @@ class ModelAdmin  extends Model
             ->countAll();
     }
 
+    public function jmlPerbaikan()
+    {
+        return $this->db->table('data_pengelolaan_barang')
+        ->where('kondisi', 2) 
+        ->countAllResults();
+    }
+
     public function jmlPengajuan()
     {
         return $this->db->table('data_pengajuan_barang')

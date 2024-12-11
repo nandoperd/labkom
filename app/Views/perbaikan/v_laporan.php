@@ -57,58 +57,100 @@
     <!-- Sidebar -->
     <div class="sidebar">
 
-<!-- Sidebar Menu -->
-<nav class="mt-2">
-  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-    <!-- Add icons to the links using the .nav-icon class
-         with font-awesome or any other icon font library -->
-    <li class="nav-item">
-      <a href="<?= base_url('admin') ?>" class="nav-link">
-        <i class="nav-icon fas fa-home"></i>
-        <p>Beranda</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('labkom') ?>" class="nav-link">
-        <i class="nav-icon fas fa-desktop"></i>
-        <p>Data Labkom</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('kategori') ?>" class="nav-link">
-        <i class="nav-icon fas fa-sitemap"></i>
-        <p>Data Kategori Barang</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('barang') ?>" class="nav-link">
-        <i class="nav-icon fas fa-boxes"></i>
-        <p>Data Barang</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('pengelolaan') ?>" class="nav-link">
-        <i class="nav-icon fas fa-th-list"></i>
-        <p>Pengelolaan Barang</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('pengajuan') ?>" class="nav-link">
-        <i class="nav-icon fas fa-tasks"></i>
-        <p>Pengajuan Barang</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('auth/logout') ?>" class="nav-link">
-        <i class="nav-icon fas fa-sign-out-alt"></i>
-        <p>Keluar</p>
-      </a>
-    </li>
-  </ul>
-</nav>
-<!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+              with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="<?= base_url('admin') ?>" class="nav-link">
+              <i class="nav-icon fas fa-home"></i>
+              <p>Beranda</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url('labkom') ?>" class="nav-link">
+              <i class="nav-icon fas fa-desktop"></i>
+              <p>Data Labkom</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-database"></i>
+              <p>Master Data<i class="right fas fa-angle-right"></i></p>
+            </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?= base_url('kategori') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-sitemap"></i>
+                    <p>Data Kategori Barang</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= base_url('barang') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-boxes"></i>
+                    <p>Data Barang</p>
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url('pengelolaan') ?>" class="nav-link">
+              <i class="nav-icon fas fa-th-list"></i>
+              <p>Pengelolaan Barang</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-file-import"></i>
+              <p>Pengajuan Barang<i class="right fas fa-angle-right"></i></p>
+            </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?= base_url('perbaikan') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-tools"></i>
+                    <p>Perbaikan Barang</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= base_url('pengajuan') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-cart-plus"></i>
+                    <p>Pengajuan Barang Baru</p>
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-file-invoice"></i>
+              <p>Laporan<i class="right fas fa-angle-right"></i></p>
+            </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?= base_url('perbaikan/laporan') ?>" class="nav-link">
+                    <i class="nav-icon far fa-file-alt"></i>
+                    <p>Perbaikan Barang</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= base_url('pengajuan/laporan') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-file-alt"></i>
+                    <p>Pengajuan Barang</p>
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url('auth/logout') ?>" class="nav-link">
+              <i class="nav-icon fas fa-sign-out-alt"></i>
+              <p>Keluar</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
@@ -171,17 +213,17 @@
                       <td><?= $value['tgl_barang_masuk'] ?> / <?= $value['tgl_barang_keluar'] ?></td>
                       <td>
                         <?php if ($value['status'] == 1): ?>
-                          <span class="badge bg-secondary">Belum Diajukan</span>
+                          Belum Diajukan
                         <?php elseif ($value['status'] == 2): ?>
-                          <span class="badge bg-info">Menunggu Persetujuan Kepala Program</span>
+                          Menunggu Persetujuan Kepala Program
                         <?php elseif ($value['status'] == 3): ?>
-                          <span class="badge bg-info">Menunggu Persetujuan Kepala Sekolah</span>
+                          Menunggu Persetujuan Kepala Sekolah
                         <?php elseif ($value['status'] == 4): ?>
-                          <span class="badge bg-danger">Pengajuan Ditolak</span>
+                          Pengajuan Ditolak
                         <?php elseif ($value['status'] == 5): ?>
-                          <span class="badge bg-success">Pengajuan Disetujui</span>
+                          Pengajuan Disetujui
                         <?php else: ?>
-                          <span class="badge bg-secondary">Tidak Digunakan</span>
+                          -
                         <?php endif; ?>
                       </td>
                       <td><?= $value['catatan'] ?></td>

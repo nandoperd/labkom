@@ -79,4 +79,12 @@ class ModelPengelolaan  extends Model
             ->get()
             ->getResultArray();
     }
+
+    public function dataPilihKategori()
+    {
+        return $this->db->table('data_kategori_barang')
+            ->select('id, nama_kategori_barang')
+            ->orderBy('nama_kategori_barang', 'ASC')
+            ->get()->getResultArray();
+    }
 }

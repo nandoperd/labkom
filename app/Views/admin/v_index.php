@@ -66,100 +66,100 @@
   <!-- Sidebar -->
   <div class="sidebar">
 
-<!-- Sidebar Menu -->
-<nav class="mt-2">
-  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-    <!-- Add icons to the links using the .nav-icon class
-         with font-awesome or any other icon font library -->
-    <li class="nav-item">
-      <a href="<?= base_url('admin') ?>" class="nav-link">
-        <i class="nav-icon fas fa-home"></i>
-        <p>Beranda</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('labkom') ?>" class="nav-link">
-        <i class="nav-icon fas fa-desktop"></i>
-        <p>Data Labkom</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link">
-        <i class="nav-icon fas fa-database"></i>
-        <p>Master Data<i class="right fas fa-angle-right"></i></p>
-      </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="<?= base_url('kategori') ?>" class="nav-link">
-              <i class="nav-icon fas fa-sitemap"></i>
-              <p>Data Kategori Barang</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="<?= base_url('barang') ?>" class="nav-link">
-              <i class="nav-icon fas fa-boxes"></i>
-              <p>Data Barang</p>
-            </a>
-          </li>
-        </ul>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('pengelolaan') ?>" class="nav-link">
-        <i class="nav-icon fas fa-th-list"></i>
-        <p>Pengelolaan Barang</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link">
-        <i class="nav-icon fas fa-file-import"></i>
-        <p>Pengajuan Barang<i class="right fas fa-angle-right"></i></p>
-      </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="<?= base_url('perbaikan') ?>" class="nav-link">
-              <i class="nav-icon fas fa-tools"></i>
-              <p>Perbaikan Barang</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="<?= base_url('pengajuan') ?>" class="nav-link">
-              <i class="nav-icon fas fa-cart-plus"></i>
-              <p>Pengajuan Barang Baru</p>
-            </a>
-          </li>
-        </ul>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link">
-        <i class="nav-icon fas fa-file-invoice"></i>
-        <p>Laporan<i class="right fas fa-angle-right"></i></p>
-      </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="<?= base_url('perbaikan/laporan') ?>" class="nav-link">
-              <i class="nav-icon far fa-file-alt"></i>
-              <p>Perbaikan Barang</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="<?= base_url('pengajuan/laporan') ?>" class="nav-link">
-              <i class="nav-icon fas fa-file-alt"></i>
-              <p>Pengajuan Barang</p>
-            </a>
-          </li>
-        </ul>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('auth/logout') ?>" class="nav-link">
-        <i class="nav-icon fas fa-sign-out-alt"></i>
-        <p>Keluar</p>
-      </a>
-    </li>
-  </ul>
-</nav>
-<!-- /.sidebar-menu -->
-</div>
-<!-- /.sidebar -->
+  <!-- Sidebar Menu -->
+  <nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+      <!-- Add icons to the links using the .nav-icon class
+          with font-awesome or any other icon font library -->
+      <li class="nav-item">
+        <a href="<?= base_url('admin') ?>" class="nav-link">
+          <i class="nav-icon fas fa-home"></i>
+          <p>Beranda</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="<?= base_url('labkom') ?>" class="nav-link">
+          <i class="nav-icon fas fa-desktop"></i>
+          <p>Data Labkom</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fas fa-database"></i>
+          <p>Master Data<i class="right fas fa-angle-right"></i></p>
+        </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?= base_url('kategori') ?>" class="nav-link">
+                <i class="nav-icon fas fa-sitemap"></i>
+                <p>Data Kategori Barang</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?= base_url('barang') ?>" class="nav-link">
+                <i class="nav-icon fas fa-boxes"></i>
+                <p>Data Barang</p>
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li class="nav-item">
+        <a href="<?= base_url('pengelolaan') ?>" class="nav-link">
+          <i class="nav-icon fas fa-th-list"></i>
+          <p>Pengelolaan Barang</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fas fa-file-import"></i>
+          <p>Pengajuan Barang<i class="right fas fa-angle-right"></i></p>
+        </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?= base_url('perbaikan') ?>" class="nav-link">
+                <i class="nav-icon fas fa-tools"></i>
+                <p>Perbaikan Barang</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?= base_url('pengajuan') ?>" class="nav-link">
+                <i class="nav-icon fas fa-cart-plus"></i>
+                <p>Pengajuan Barang Baru</p>
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fas fa-file-invoice"></i>
+          <p>Laporan<i class="right fas fa-angle-right"></i></p>
+        </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?= base_url('perbaikan/laporan') ?>" class="nav-link">
+                <i class="nav-icon far fa-file-alt"></i>
+                <p>Perbaikan Barang</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?= base_url('pengajuan/laporan') ?>" class="nav-link">
+                <i class="nav-icon fas fa-file-alt"></i>
+                <p>Pengajuan Barang</p>
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li class="nav-item">
+        <a href="<?= base_url('auth/logout') ?>" class="nav-link">
+          <i class="nav-icon fas fa-sign-out-alt"></i>
+          <p>Keluar</p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
 </aside>
 
 </div> <!--tutup wrapper -->
@@ -228,15 +228,59 @@
           <!-- small box -->
           <div class="small-box bg-danger">
             <div class="inner">
+              <h3><?= $jmlPerbaikan;?></h3>
+              <p>Perbaikan Barang</p>
+            </div>
+            <div class="icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <a href="<?= base_url('perbaikan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="small-box bg-info">
+            <div class="inner">
               <h3><?= $jmlPengajuan;?></h3>
               <p>Pengajuan Barang</p>
             </div>
             <div class="icon">
-              <i class="fas fa-tasks"></i>
+              <i class="fas fa-cart-plus"></i>
             </div>
             <a href="<?= base_url('pengajuan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="small-box bg-warning">
+            <div class="inner">
+              <h3><?= $jmlPerbaikan;?></h3>
+              <p>Laporan Perbaikan</p>
+            </div>
+            <div class="icon">
+              <i class="far fa-file-alt"></i>
+            </div>
+            <a href="<?= base_url('perbaikan/laporan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="small-box bg-success">
+            <div class="inner">
+              <h3><?= $jmlPengajuan;?></h3>
+              <p>Laporan Pengajuan</p>
+            </div>
+            <div class="icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <a href="<?= base_url('pengajuan/laporan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
       </div>
     </div>
   </section>

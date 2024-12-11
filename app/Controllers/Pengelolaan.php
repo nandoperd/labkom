@@ -22,7 +22,8 @@ class Pengelolaan extends BaseController
             'title' => 'Data Pengelolaan Barang',
             'd' => $this->ModelPengelolaan->allData(),
             'labkom' => $this->ModelPengelolaan->dataLabkom(),
-            'kategori' => $this->ModelPengelolaan->dataKategori()
+            'kategori' => $this->ModelPengelolaan->dataKategori(),
+            'pilihKategori' => $this->ModelPengelolaan->dataPilihKategori()
         ];
         return view('pengelolaan/v_index', $data);
     }
