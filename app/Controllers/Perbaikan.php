@@ -188,4 +188,15 @@ public function update($id)
         exit();
     }
 
+    public function laporan()
+    {
+        $data = [
+            'title' => 'Laporan Perbaikan Barang',
+            'd' => $this->ModelPerbaikan->allData(),
+            'labkom' => $this->ModelPerbaikan->dataLabkom(),
+            'kategori' => $this->ModelPerbaikan->dataKategori()
+        ];
+        return view('perbaikan/v_laporan', $data);
+    }
+
 }

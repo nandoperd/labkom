@@ -136,13 +136,13 @@
       </a>
         <ul class="nav nav-treeview">
           <li class="nav-item">
-            <a href="<?= base_url('kategori') ?>" class="nav-link">
+            <a href="<?= base_url('perbaikan/laporan') ?>" class="nav-link">
               <i class="nav-icon far fa-file-alt"></i>
               <p>Perbaikan Barang</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= base_url('pengajuan') ?>" class="nav-link">
+            <a href="<?= base_url('pengajuan/laporan') ?>" class="nav-link">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>Pengajuan Barang</p>
             </a>

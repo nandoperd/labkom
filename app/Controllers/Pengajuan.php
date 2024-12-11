@@ -174,4 +174,16 @@ class Pengajuan extends BaseController
         return redirect()->to(base_url('pengajuan'));
     }
 
+    public function laporan()
+    {
+        $data = [
+            'title' => 'Data Pengelolaan Barang',
+            'd' => $this->ModelPengajuan->allData(),
+            'labkom' => $this->ModelPengajuan->dataLabkom(),
+            'kategori' => $this->ModelPengajuan->dataKategori(),
+            'dataBarang' => $this->ModelPengelolaan->allData()
+        ];
+        return view('pengajuan/v_laporan', $data);
+    }
+
 }
