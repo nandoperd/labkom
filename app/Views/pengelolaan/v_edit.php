@@ -196,8 +196,8 @@
                                 <label>Kondisi Barang</label>
                                 <select class="form-control select2" name="kondisi" required>
                                     <option value="">--Pilih Kondisi--</option>
-                                    <option value="2" <?= $d['kondisi'] == 2 ? 'selected' : '' ?>>Rusak</option>
-                                    <option value="3" <?= $d['kondisi'] == 3 ? 'selected' : '' ?>>Tidak Digunakan</option>
+                                    <option value="2">Rusak</option>
+                                    <option value="3">Tidak Digunakan</option>
                                 </select>
                             </div>
 

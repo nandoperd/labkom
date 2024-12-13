@@ -19,7 +19,12 @@ class Kepsek extends BaseController
             'jmlLabkom' => $this->ModelKepsek->jmlLabkom(),
             'jmlKategori' => $this->ModelKepsek->jmlKategori(),
             'jmlPengelolaan' => $this->ModelKepsek->jmlPengelolaan(),
+            'jmlPerbaikan' => $this->ModelKepsek->jmlPerbaikan(),
+            'jmlPerbaikanSetuju' => $this->ModelKepsek->jmlPerbaikanSetuju(),
+            'jmlPerbaikanAll' => $this->ModelKepsek->jmlPerbaikanAll(),
             'jmlPengajuan' => $this->ModelKepsek->jmlPengajuan(),
+            'jmlPengajuanSetuju' => $this->ModelKepsek->jmlPengajuanSetuju(),
+            'jmlPengajuanAll' => $this->ModelKepsek->jmlPengajuanAll(),
         ];
         return view('kepsek/v_index', $data);
     }
@@ -33,7 +38,7 @@ class Kepsek extends BaseController
         return view('kepsek/v_labkom', $data);
     }
 
-    public function pengelolaan()
+    public function inventaris()
     {
         $data = [
             'title' => 'Data Inventaris Lab',
@@ -161,6 +166,24 @@ class Kepsek extends BaseController
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
             return redirect()->to(base_url('kepsek/editPengajuan/' . $id));
         }
+    }
+
+    public function laporan_perbaikan()
+    {
+        $data = [
+            'title' => 'Laporan Perbaikan Barang',
+            'd' => $this->ModelKepsek->dataLaporanPerbaikan(),
+        ];
+        return view('keprog/v_laporan_perbaikan', $data);
+    }
+
+    public function laporan_pengajuan()
+    {
+        $data = [
+            'title' => 'Laporan Pengajuan Barang',
+            'd' => $this->ModelKepsek->dataLaporanPengajuan(),
+        ];
+        return view('keprog/v_laporan_pengajuan', $data);
     }
 
 }

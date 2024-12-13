@@ -20,14 +20,49 @@ class ModelKeprog  extends Model
 
     public function jmlPengelolaan()
     {
-        return $this->db->table('data_barang')
+        return $this->db->table('data_pengelolaan_barang')
             ->countAll();
+    }
+
+    public function jmlPerbaikanAll()
+    {
+        return $this->db->table('data_pengelolaan_barang')
+        ->where('kondisi', 2,3) 
+        ->countAllResults();
+    }
+
+    public function jmlPerbaikan()
+    {
+        return $this->db->table('data_pengelolaan_barang')
+        ->where('status', 2) 
+        ->countAllResults();
+    }
+
+    public function jmlPerbaikanSetuju()
+    {
+        return $this->db->table('data_pengelolaan_barang')
+        ->where('status', 3) 
+        ->countAllResults();
+    }
+
+    public function jmlPengajuanAll()
+    {
+        return $this->db->table('data_pengajuan_barang')
+        ->countAll();
     }
 
     public function jmlPengajuan()
     {
         return $this->db->table('data_pengajuan_barang')
-            ->countAll();
+        ->where('status', 1) 
+        ->countAllResults();
+    }
+
+    public function jmlPengajuanSetuju()
+    {
+        return $this->db->table('data_pengajuan_barang')
+        ->where('status', 2) 
+        ->countAllResults();
     }
 
     public function getAllLabkom()
@@ -37,7 +72,13 @@ class ModelKeprog  extends Model
 
     public function getAllPengelolaan()
     {
-        return $this->db->table('data_barang')->get()->getResultArray();
+        return $this->db->table('data_pengelolaan_barang')
+            ->select('data_pengelolaan_barang.*, data_barang.nama_barang, data_kategori_barang.nama_kategori_barang, data_labkom.nama as labkom_nama')
+            ->join('data_barang', 'data_pengelolaan_barang.id_barang = data_barang.id', 'left')
+            ->join('data_kategori_barang', 'data_pengelolaan_barang.id_kategori_barang = data_kategori_barang.id', 'left')
+            ->join('data_labkom', 'data_pengelolaan_barang.id_labkom = data_labkom.id', 'left')
+            ->orderBy('data_pengelolaan_barang.id', 'ASC')
+            ->get()->getResultArray();
     }
 
     public function getAllPengajuan()
@@ -106,5 +147,27 @@ class ModelKeprog  extends Model
     {
         $this->db->table('data_pengajuan_barang')
             ->where('id', $data['id'])->update($data);
+    }
+
+    public function dataLaporanPerbaikan()
+    {
+        return $this->db->table('data_pengelolaan_barang')
+            ->select('data_pengelolaan_barang.*, data_barang.nama_barang, data_kategori_barang.nama_kategori_barang, data_labkom.nama as labkom_nama')
+            ->join('data_barang', 'data_pengelolaan_barang.id_barang = data_barang.id', 'left')
+            ->join('data_kategori_barang', 'data_pengelolaan_barang.id_kategori_barang = data_kategori_barang.id', 'left')
+            ->join('data_labkom', 'data_pengelolaan_barang.id_labkom = data_labkom.id', 'left')
+            ->where('data_pengelolaan_barang.kondisi', 2) 
+            ->orderBy('data_pengelolaan_barang.id', 'ASC')
+            ->get()->getResultArray();
+    }
+
+    public function dataLaporanPengajuan()
+    {
+        return $this->db->table('data_pengajuan_barang')
+            ->select('data_pengajuan_barang.*, data_kategori_barang.nama_kategori_barang, data_labkom.nama as labkom_nama')
+            ->join('data_kategori_barang', 'data_pengajuan_barang.id_kategori_barang = data_kategori_barang.id', 'left')
+            ->join('data_labkom', 'data_pengajuan_barang.id_labkom = data_labkom.id', 'left')
+            ->orderBy('data_pengajuan_barang.id', 'ASC')
+            ->get()->getResultArray();
     }
 }

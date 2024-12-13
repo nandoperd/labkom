@@ -214,9 +214,11 @@
                           <?php elseif ($value['status'] == 3): ?>
                               <span class="badge bg-info">Menunggu Persetujuan Kepala Sekolah</span>
                           <?php elseif ($value['status'] == 4): ?>
-                              <span class="badge bg-danger">Pengajuan Ditolak</span>
+                              <span class="badge bg-danger">Pengajuan Ditolak Kepala Sekolah</span>
                           <?php elseif ($value['status'] == 5): ?>
                               <span class="badge bg-success">Pengajuan Disetujui</span>
+                              <?php elseif ($value['status'] == 6): ?>
+                                <span class="badge bg-danger">Pengajuan Ditolak oleh Kepala Program</span>
                           <?php else: ?>
                               <span class="badge bg-secondary">Tidak Digunakan</span>
                           <?php endif; ?>

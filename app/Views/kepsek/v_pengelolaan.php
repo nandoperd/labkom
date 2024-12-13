@@ -63,28 +63,62 @@
     <!-- Add icons to the links using the .nav-icon class
          with font-awesome or any other icon font library -->
     <li class="nav-item">
-      <a href="<?= base_url('keprog') ?>" class="nav-link">
+      <a href="<?= base_url('kepsek') ?>" class="nav-link">
         <i class="nav-icon fas fa-home"></i>
         <p>Beranda</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('keprog/labkom') ?>" class="nav-link">
+      <a href="<?= base_url('kepsek/labkom') ?>" class="nav-link">
         <i class="nav-icon fas fa-desktop"></i>
         <p>Data Labkom</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('keprog/pengelolaan') ?>" class="nav-link">
+      <a href="<?= base_url('kepsek/inventaris') ?>" class="nav-link">
         <i class="nav-icon fas fa-th-list"></i>
         <p>Data Inventaris Lab</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('keprog/pengajuan') ?>" class="nav-link">
-        <i class="nav-icon fas fa-tasks"></i>
-        <p>Pengajuan Barang</p>
+      <a href="#" class="nav-link">
+        <i class="nav-icon fas fa-file-import"></i>
+        <p>Pengajuan Barang<i class="right fas fa-angle-right"></i></p>
       </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="<?= base_url('kepsek/perbaikan') ?>" class="nav-link">
+              <i class="nav-icon fas fa-tools"></i>
+              <p>Perbaikan Barang</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url('kepsek/pengajuan') ?>" class="nav-link">
+              <i class="nav-icon fas fa-cart-plus"></i>
+              <p>Pengajuan Barang Baru</p>
+            </a>
+          </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fas fa-file-invoice"></i>
+          <p>Laporan<i class="right fas fa-angle-right"></i></p>
+        </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?= base_url('kepsek/laporan_perbaikan') ?>" class="nav-link">
+                <i class="nav-icon far fa-file-alt"></i>
+                <p>Perbaikan Barang</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?= base_url('kepsek/laporan_pengajuan') ?>" class="nav-link">
+                <i class="nav-icon fas fa-file-alt"></i>
+                <p>Pengajuan Barang</p>
+              </a>
+            </li>
+          </ul>
     </li>
     <li class="nav-item">
       <a href="<?= base_url('auth/logout') ?>" class="nav-link">
@@ -114,67 +148,70 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="table-responsive">
-                <table id="example1" class="table table-bordered table-striped">
-                <?php
-                if (session()->getFlashdata('pesan')) {
-                    echo '<div class="alert alert-success" role="alert">';
-                    echo session()->getFlashdata('pesan');
-                    echo '</div>';
-                }
-                ?>
-                  <thead>
-                  <tr>
-                    <th class="text-center">No</th>
-                    <th>Kode Barang</th>
-                    <th>Nama Barang</th>
-                    <th>Kategori Barang</th>
-                    <th>Sumber Pengadaan Barang</th>
-                    <th>Tanggal Masuk/Keluar Barang</th>
-                    <th>Kondisi</th>
-                    <th>Catatan</th>
-                    <th class="text-center">Aksi</th>
-                  </tr>
-                  </thead>
-                  <tbody>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="table-responsive">
+                    <table id="example1" class="table table-bordered table-striped">
                     <?php
-                    $no = 1;
-                    foreach ($pengelolaanData as $key => $value) { ?>
-                  <tr>
-                    <td class="text-center"><?= $no++ ?></td>
-                    <td><?= $value['nama_barang'] ?></td>
-                    <td><?= $value['id_kategori_barang'] ?></td>
-                    <td><?= $value['kd_perolehan_brg'] ?></td>
-                    <td><?= $value['tgl_barang_masuk'] ?> / <?= $value['tgl_barang_keluar'] ?></td>
-                    <td><?= $value['kondisi'] ?></td>
-                    <td><?= $value['catatan'] ?></td>
-                    <td class="text-center">
-                    <!-- <a class="btn btn-warning btn-sm" href="<?= base_url('pengelolaan/edit/' . $value['id'])?>"><i class="fa fa-edit"></i></a> -->
-                    <!-- <a href="<?= base_url('pengelolaan/print/' . $value['id']) ?>" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-scroll"></i></a> -->
-                    <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id']  ?>"><i class="fa fa-trash"></i></button>
-                    </td>
-                  </tr>
-                  <?php } ?>
-                  </tfoot>
-                </table>
+                    if (session()->getFlashdata('pesan')) {
+                        echo '<div class="alert alert-success" role="alert">';
+                        echo session()->getFlashdata('pesan');
+                        echo '</div>';
+                    }
+                    ?>
+                      <thead>
+                      <tr>
+                        <th class="text-center">No</th>
+                        <th>Labkom</th>
+                        <th>Nama Barang</th>
+                        <th>Kategori Barang</th>
+                        <th>Sumber Pengadaan</th>
+                        <th>Tanggal Masuk/Keluar</th>
+                        <th>Kondisi</th>
+                        <th>Catatan</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <?php
+                        $no = 1;
+                        foreach ($pengelolaanData as $key => $value) { ?>
+                      <tr>
+                        <td class="text-center"><?= $no++ ?></td>
+                        <td><?= $value['labkom_nama'] ?></td>
+                        <td><?= $value['nama_barang'] ?></td>
+                        <td><?= $value['nama_kategori_barang'] ?></td>
+                        <td><?= $value['kd_perolehan_brg'] ?></td>
+                        <td><?= $value['tgl_barang_masuk'] ?> / <?= $value['tgl_barang_keluar'] ?></td>
+                        <td>
+                          <?php if ($value['kondisi'] == 1): ?>
+                            Baik
+                          <?php elseif ($value['kondisi'] == 2): ?>
+                            Rusak
+                          <?php else: ?>
+                            Tidak Digunakan
+                          <?php endif; ?>
+                        </td>
+                        <td><?= $value['catatan'] ?></td>
+                      </tr>
+                      <?php } ?>
+                      </tfoot>
+                    </table>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
                 </div>
+                <!-- /.card -->
               </div>
-              <!-- /.card-body -->
+              <!-- /.col -->
             </div>
-            <!-- /.card -->
+            <!-- /.row -->
           </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
+          <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">

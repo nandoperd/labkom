@@ -21,7 +21,9 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
-        'filteradmin' => \App\Filters\FilterAdmin::class
+        'filteradmin' => \App\Filters\FilterAdmin::class,
+        'filterkeprog' => \App\Filters\FilterKeprog::class,
+        'filterkepsek' => \App\Filters\FilterKepsek::class
     ];
 
     /**
@@ -31,6 +33,20 @@ class Filters extends BaseConfig
     public array $globals = [
         'before' => [
             'filteradmin' => [
+                'except' => [
+                    'auth', 'auth/*',
+                    'home', 'home/*',
+                    '/'
+                ]
+                ],
+                'filterkeprog' => [
+                'except' => [
+                    'auth', 'auth/*',
+                    'home', 'home/*',
+                    '/'
+                ]
+                ],
+                'filterkepsek' => [
                 'except' => [
                     'auth', 'auth/*',
                     'home', 'home/*',
@@ -52,6 +68,18 @@ class Filters extends BaseConfig
                     'pengajuan', 'pengajuan/*',
                     'barang', 'barang/*',
                     'perbaikan', 'perbaikan/*',
+                ]
+            ],
+            'filterkeprog' => [
+                'except' => [
+                    'keprog', 'keprog/*',
+                    'home', 'home/*',
+                ]
+            ],
+            'filterkepsek' => [
+                'except' => [
+                    'kepsek', 'kepsek/*',
+                    'home', 'home/*',
                 ]
             ],
             'toolbar',

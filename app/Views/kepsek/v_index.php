@@ -84,7 +84,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('kepsek/pengelolaan') ?>" class="nav-link">
+      <a href="<?= base_url('kepsek/inventaris') ?>" class="nav-link">
         <i class="nav-icon fas fa-th-list"></i>
         <p>Data Inventaris Lab</p>
       </a>
@@ -108,6 +108,26 @@
             </a>
           </li>
         </ul>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fas fa-file-invoice"></i>
+          <p>Laporan<i class="right fas fa-angle-right"></i></p>
+        </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?= base_url('kepsek/laporan_perbaikan') ?>" class="nav-link">
+                <i class="nav-icon far fa-file-alt"></i>
+                <p>Perbaikan Barang</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?= base_url('kepsek/laporan_pengajuan') ?>" class="nav-link">
+                <i class="nav-icon fas fa-file-alt"></i>
+                <p>Pengajuan Barang</p>
+              </a>
+            </li>
+          </ul>
     </li>
     <li class="nav-item">
       <a href="<?= base_url('auth/logout') ?>" class="nav-link">
@@ -144,7 +164,7 @@
         <!-- ./col -->
         <div class="col-lg-3 col-6">
           <!-- small box -->
-          <div class="small-box bg-warning">
+          <div class="small-box bg-secondary">
             <div class="inner">
               <h3><?= $jmlPengelolaan;?></h3>
               <p>Data Inventaris Lab</p>
@@ -152,7 +172,21 @@
             <div class="icon">
               <i class="fas fa-th-list"></i>
             </div>
-            <a href="<?= base_url('kepsek/pengelolaan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?= base_url('kepsek/inventaris') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="small-box bg-primary">
+            <div class="inner">
+              <h3><?= $jmlPerbaikanAll;?></h3>
+              <p>Laporan Perbaikan Barang</p>
+            </div>
+            <div class="icon">
+              <i class="far fa-file-alt"></i>
+            </div>
+            <a href="<?= base_url('kepsek/laporan_perbaikan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -160,14 +194,56 @@
           <!-- small box -->
           <div class="small-box bg-danger">
             <div class="inner">
-              <h3><?= $jmlPengajuan;?></h3>
-              <p>Pengajuan Barang</p>
+              <h3><?= $jmlPengajuanAll;?></h3>
+              <p>Laporan Pengajuan Barang</p>
             </div>
             <div class="icon">
-              <i class="fas fa-tasks"></i>
+              <i class="fas fas fa-file-alt"></i>
+            </div>
+            <a href="<?= base_url('kepsek/laporan_pengajuan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-6 col-6">
+          <!-- small box -->
+          <div class="small-box bg-success">
+          <div class="inner d-flex justify-content-between align-items-center">
+                <div class="approved">
+                    <h3 class="text-center"><?= $jmlPerbaikan;?></h3>
+                    <p class="text-center">Disetujui</p>
+                </div>
+                <div class="not-approved text-right">
+                    <h3 class="text-center"><?= $jmlPerbaikanSetuju;?></h3>
+                    <p class="text-center">Belum Disetujui</p>
+                </div>
+            </div>
+            <p class="text-center">Pengajuan Perbaikan Barang</p>
+            <div class="icon">
+              <i class="fas fa-tools"></i>
             </div>
             <a href="<?= base_url('kepsek/pengajuan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
           </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-6 col-6">
+        <!-- small box -->
+        <div class="small-box bg-warning">
+            <div class="inner d-flex justify-content-between align-items-center">
+                <div class="approved">
+                    <h3 class="text-center"><?= $jmlPengajuan;?></h3>
+                    <p class="text-center">Disetujui</p>
+                </div>
+                <div class="not-approved text-right">
+                    <h3 class="text-center"><?= $jmlPengajuanSetuju;?></h3>
+                    <p class="text-center">Belum Disetujui</p>
+                </div>
+            </div>
+            <p class="text-center">Pengajuan Barang Baru</p>
+            <div class="icon">
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <a href="<?= base_url('kepsek/pengajuan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
         </div>
       </div>
     </div>

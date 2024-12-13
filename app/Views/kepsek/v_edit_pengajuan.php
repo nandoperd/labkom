@@ -63,40 +63,62 @@
     <!-- Add icons to the links using the .nav-icon class
          with font-awesome or any other icon font library -->
     <li class="nav-item">
-      <a href="<?= base_url('admin') ?>" class="nav-link">
+      <a href="<?= base_url('kepsek') ?>" class="nav-link">
         <i class="nav-icon fas fa-home"></i>
         <p>Beranda</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('labkom') ?>" class="nav-link">
+      <a href="<?= base_url('kepsek/labkom') ?>" class="nav-link">
         <i class="nav-icon fas fa-desktop"></i>
         <p>Data Labkom</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('kategori') ?>" class="nav-link">
-        <i class="nav-icon fas fa-sitemap"></i>
-        <p>Data Kategori Barang</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('barang') ?>" class="nav-link">
-        <i class="nav-icon fas fa-boxes"></i>
-        <p>Data Barang</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="<?= base_url('pengelolaan') ?>" class="nav-link">
+      <a href="<?= base_url('kepsek/inventaris') ?>" class="nav-link">
         <i class="nav-icon fas fa-th-list"></i>
-        <p>Pengelolaan Barang</p>
+        <p>Data Inventaris Lab</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('pengajuan') ?>" class="nav-link">
-        <i class="nav-icon fas fa-tasks"></i>
-        <p>Pengajuan Barang</p>
+      <a href="#" class="nav-link">
+        <i class="nav-icon fas fa-file-import"></i>
+        <p>Pengajuan Barang<i class="right fas fa-angle-right"></i></p>
       </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="<?= base_url('kepsek/perbaikan') ?>" class="nav-link">
+              <i class="nav-icon fas fa-tools"></i>
+              <p>Perbaikan Barang</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url('kepsek/pengajuan') ?>" class="nav-link">
+              <i class="nav-icon fas fa-cart-plus"></i>
+              <p>Pengajuan Barang Baru</p>
+            </a>
+          </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fas fa-file-invoice"></i>
+          <p>Laporan<i class="right fas fa-angle-right"></i></p>
+        </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?= base_url('kepsek/laporan_perbaikan') ?>" class="nav-link">
+                <i class="nav-icon far fa-file-alt"></i>
+                <p>Perbaikan Barang</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?= base_url('kepsek/laporan_pengajuan') ?>" class="nav-link">
+                <i class="nav-icon fas fa-file-alt"></i>
+                <p>Pengajuan Barang</p>
+              </a>
+            </li>
+          </ul>
     </li>
     <li class="nav-item">
       <a href="<?= base_url('auth/logout') ?>" class="nav-link">

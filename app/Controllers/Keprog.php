@@ -15,11 +15,16 @@ class Keprog extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Admin Labkom',
+            'title' => 'Kepala Program Labkom',
             'jmlLabkom' => $this->ModelKeprog->jmlLabkom(),
             'jmlKategori' => $this->ModelKeprog->jmlKategori(),
             'jmlPengelolaan' => $this->ModelKeprog->jmlPengelolaan(),
+            'jmlPerbaikan' => $this->ModelKeprog->jmlPerbaikan(),
+            'jmlPerbaikanSetuju' => $this->ModelKeprog->jmlPerbaikanSetuju(),
+            'jmlPerbaikanAll' => $this->ModelKeprog->jmlPerbaikanAll(),
             'jmlPengajuan' => $this->ModelKeprog->jmlPengajuan(),
+            'jmlPengajuanSetuju' => $this->ModelKeprog->jmlPengajuanSetuju(),
+            'jmlPengajuanAll' => $this->ModelKeprog->jmlPengajuanAll(),
         ];
         return view('keprog/v_index', $data);
     }
@@ -33,7 +38,7 @@ class Keprog extends BaseController
         return view('keprog/v_labkom', $data);
     }
 
-    public function pengelolaan()
+    public function inventaris()
     {
         $data = [
             'title' => 'Data Inventaris Lab',
@@ -161,6 +166,24 @@ class Keprog extends BaseController
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
             return redirect()->to(base_url('keprog/editPengajuan/' . $id));
         }
+    }
+
+    public function laporan_perbaikan()
+    {
+        $data = [
+            'title' => 'Laporan Perbaikan Barang',
+            'd' => $this->ModelKeprog->dataLaporanPerbaikan(),
+        ];
+        return view('keprog/v_laporan_perbaikan', $data);
+    }
+
+    public function laporan_pengajuan()
+    {
+        $data = [
+            'title' => 'Laporan Pengajuan Barang',
+            'd' => $this->ModelKeprog->dataLaporanPengajuan(),
+        ];
+        return view('keprog/v_laporan_pengajuan', $data);
     }
 
 }

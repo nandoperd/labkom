@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data Perbaikan Barang</title>
+  <title>Laporan Perbaikan Barang</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -63,19 +63,19 @@
     <!-- Add icons to the links using the .nav-icon class
          with font-awesome or any other icon font library -->
     <li class="nav-item">
-      <a href="<?= base_url('keprog') ?>" class="nav-link">
+      <a href="<?= base_url('kepsek') ?>" class="nav-link">
         <i class="nav-icon fas fa-home"></i>
         <p>Beranda</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('keprog/labkom') ?>" class="nav-link">
+      <a href="<?= base_url('kepsek/labkom') ?>" class="nav-link">
         <i class="nav-icon fas fa-desktop"></i>
         <p>Data Labkom</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('keprog/inventaris') ?>" class="nav-link">
+      <a href="<?= base_url('kepsek/inventaris') ?>" class="nav-link">
         <i class="nav-icon fas fa-th-list"></i>
         <p>Data Inventaris Lab</p>
       </a>
@@ -87,13 +87,13 @@
       </a>
         <ul class="nav nav-treeview">
           <li class="nav-item">
-            <a href="<?= base_url('keprog/perbaikan') ?>" class="nav-link">
+            <a href="<?= base_url('kepsek/perbaikan') ?>" class="nav-link">
               <i class="nav-icon fas fa-tools"></i>
               <p>Perbaikan Barang</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= base_url('keprog/pengajuan') ?>" class="nav-link">
+            <a href="<?= base_url('kepsek/pengajuan') ?>" class="nav-link">
               <i class="nav-icon fas fa-cart-plus"></i>
               <p>Pengajuan Barang Baru</p>
             </a>
@@ -107,13 +107,13 @@
         </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?= base_url('keprog/laporan_perbaikan') ?>" class="nav-link">
+              <a href="<?= base_url('kepsek/laporan_perbaikan') ?>" class="nav-link">
                 <i class="nav-icon far fa-file-alt"></i>
                 <p>Perbaikan Barang</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url('keprog/laporan_pengajuan') ?>" class="nav-link">
+              <a href="<?= base_url('kepsek/laporan_pengajuan') ?>" class="nav-link">
                 <i class="nav-icon fas fa-file-alt"></i>
                 <p>Pengajuan Barang</p>
               </a>
@@ -129,8 +129,8 @@
   </ul>
 </nav>
 <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
+      </div>
+      <!-- /.sidebar -->
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
@@ -140,64 +140,89 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Data Pengajuan Perbaikan Barang</h1>
+            <h1>Laporan Perbaikan Barang</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
     </section>
 
-    <!-- Main content -->
-<section class="content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <?php
-                        if (session()->getFlashdata('pesan')) {
-                            echo '<div class="alert alert-success" role="alert">';
-                            echo session()->getFlashdata('pesan');
-                            echo '</div>';
-                        }
-                        if (session()->getFlashdata('errors')) {
-                            echo '<div class="alert alert-danger" role="alert">';
-                            echo '<ul>';
-                            foreach (session()->getFlashdata('errors') as $error) {
-                                echo '<li>' . $error . '</li>';
-                            }
-                            echo '</ul>';
-                            echo '</div>';
-                        }
-                        ?>
-                        
-                        <?php echo form_open('keprog/updatePerbaikan/' . $d['id']); ?>
-
-                        <div class="form-group">
-                            <label>Persetujuan Perbaikan Barang</label>
-                            <select class="form-control select2" name="status" required>
-                                <option value="">--Pilih Persetujuan Perbaikan Barang--</option>
-                                <option value="3">Disetujui</option>
-                                <option value="6">Ditolak</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Catatan</label>
-                            <input name="catatan" class="form-control" placeholder="Catatan.." value="<?= $d['catatan'] ?>" required>
-                        </div>
-
-                        <div class="form-footer">
-                            <button type="submit" class="btn btn-success">Update</button>
-                            <a href="<?= base_url('keprog/perbaikan') ?>" class="btn btn-danger">Kembali</a>
-                        </div>
-
-                        <?php echo form_close(); ?>
-                    </div>
-                </div>
+    <section class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <!-- Input Tanggal -->
+            <div class="row mb-3">
+              <div class="col-md-5">
+                <label for="startDate">Tanggal Mulai:</label>
+                <input type="date" id="startDate" class="form-control">
+              </div>
+              <div class="col-md-5">
+                <label for="endDate">Tanggal Akhir:</label>
+                <input type="date" id="endDate" class="form-control">
+              </div>
+              <div class="col-md-2">
+                <label>&nbsp;</label>
+                <button id="filterBtn" class="btn btn-primary btn-block">Filter</button>
+              </div>
             </div>
+            <div class="table-responsive">
+              <table id="example1" class="table table-bordered table-striped">
+                <!-- Tabel tetap sama -->
+                <thead>
+                  <tr>
+                    <th class="text-center">No</th>
+                    <th>Labkom</th>
+                    <th>Nama Barang</th>
+                    <th>Kategori Barang</th>
+                    <th>Tanggal Masuk/Keluar</th>
+                    <th>Status</th>
+                    <th>Catatan</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                  <?php
+                  $no = 1;
+                  foreach ($d as $key => $value) { ?>
+                    <tr>
+                      <td class="text-center"><?= $no++ ?></td>
+                      <td><?= $value['labkom_nama'] ?></td>
+                      <td><?= $value['nama_barang'] ?></td>
+                      <td><?= $value['nama_kategori_barang'] ?></td>
+                      <td><?= $value['tgl_barang_masuk'] ?> / <?= $value['tgl_barang_keluar'] ?></td>
+                      <td>
+                        <?php if ($value['status'] == 1): ?>
+                          Belum Diajukan
+                        <?php elseif ($value['status'] == 2): ?>
+                          Menunggu Persetujuan Kepala Program
+                        <?php elseif ($value['status'] == 3): ?>
+                          Menunggu Persetujuan Kepala Sekolah
+                        <?php elseif ($value['status'] == 4): ?>
+                          Pengajuan Ditolak
+                        <?php elseif ($value['status'] == 5): ?>
+                          Pengajuan Disetujui
+                        <?php else: ?>
+                          -
+                        <?php endif; ?>
+                      </td>
+                      <td><?= $value['catatan'] ?></td>
+                    </tr>
+                  <?php } ?>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- /.card-body -->
         </div>
+        <!-- /.card -->
+      </div>
+      <!-- /.col -->
     </div>
-    </section>
+    <!-- /.row -->
+  </div>
+  <!-- /.container-fluid -->
+</section>
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
@@ -218,6 +243,21 @@
 <!-- scripts -->
 <!-- jQuery -->
 <script src="<?= base_url() ?>template/plugins/jquery/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#filterBtn').click(function() {
+      var startDate = $('#startDate').val();
+      var endDate = $('#endDate').val();
+
+      $('#tableBody tr').filter(function() {
+        var rowDate = $(this).find('td:nth-child(5)').text().split(' / ')[0]; // Ambil tanggal masuk
+        return (rowDate < startDate || rowDate > endDate) ? $(this).hide() : $(this).show();
+      });
+    });
+  });
+</script>
 
 <!-- Bootstrap 4 -->
 <script src="<?= base_url() ?>template/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>

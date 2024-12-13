@@ -75,16 +75,50 @@
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('keprog/pengelolaan') ?>" class="nav-link">
+      <a href="<?= base_url('keprog/inventaris') ?>" class="nav-link">
         <i class="nav-icon fas fa-th-list"></i>
         <p>Data Inventaris Lab</p>
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?= base_url('keprog/pengajuan') ?>" class="nav-link">
-        <i class="nav-icon fas fa-tasks"></i>
-        <p>Pengajuan Barang</p>
+      <a href="#" class="nav-link">
+        <i class="nav-icon fas fa-file-import"></i>
+        <p>Pengajuan Barang<i class="right fas fa-angle-right"></i></p>
       </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="<?= base_url('keprog/perbaikan') ?>" class="nav-link">
+              <i class="nav-icon fas fa-tools"></i>
+              <p>Perbaikan Barang</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url('keprog/pengajuan') ?>" class="nav-link">
+              <i class="nav-icon fas fa-cart-plus"></i>
+              <p>Pengajuan Barang Baru</p>
+            </a>
+          </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fas fa-file-invoice"></i>
+          <p>Laporan<i class="right fas fa-angle-right"></i></p>
+        </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?= base_url('keprog/laporan_perbaikan') ?>" class="nav-link">
+                <i class="nav-icon far fa-file-alt"></i>
+                <p>Perbaikan Barang</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?= base_url('keprog/laporan_pengajuan') ?>" class="nav-link">
+                <i class="nav-icon fas fa-file-alt"></i>
+                <p>Pengajuan Barang</p>
+              </a>
+            </li>
+          </ul>
     </li>
     <li class="nav-item">
       <a href="<?= base_url('auth/logout') ?>" class="nav-link">
