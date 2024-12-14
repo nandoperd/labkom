@@ -221,7 +221,7 @@
             <div class="icon">
               <i class="fas fa-tools"></i>
             </div>
-            <a href="<?= base_url('kepsek/pengajuan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?= base_url('kepsek/perbaikan') ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->

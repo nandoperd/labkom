@@ -170,7 +170,7 @@
                         }
                         ?>
                         
-                        <?php echo form_open('keprog/updatePerbaikan/' . $d['id']); ?>
+                        <?php echo form_open('kepsek/updatePerbaikan/' . $d['id']); ?>
 
                         <div class="form-group">
                             <label>Persetujuan Perbaikan Barang</label>
@@ -188,7 +188,7 @@
 
                         <div class="form-footer">
                             <button type="submit" class="btn btn-success">Update</button>
-                            <a href="<?= base_url('keprog/perbaikan') ?>" class="btn btn-danger">Kembali</a>
+                            <a href="<?= base_url('kepsek/perbaikan') ?>" class="btn btn-danger">Kembali</a>
                         </div>
 
                         <?php echo form_close(); ?>
