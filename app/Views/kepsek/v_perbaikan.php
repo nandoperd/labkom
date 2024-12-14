@@ -199,7 +199,7 @@
                     </td>
                     <td><?= $value['catatan'] ?></td>
                     <td class="text-center">
-                      <a class="btn btn-success btn-sm" href="<?= base_url('keprog/editPerbaikan/' . $value['id']) ?>"><i class="fas fa-arrow-alt-circle-right"></i></a>
+                      <a class="btn btn-success btn-sm" href="<?= base_url('kepsek/editPerbaikan/' . $value['id']) ?>"><i class="fas fa-arrow-alt-circle-right"></i></a>
                     </td>
                   </tr>
                   <?php } ?>
