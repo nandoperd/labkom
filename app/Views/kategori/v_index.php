@@ -200,8 +200,7 @@
                         <td class="text-center"><?= $no++ ?></td>
                         <td><?= $value['nama_kategori_barang'] ?></td>
                         <td class="text-center">
-                        <!-- <a class="btn btn-warning btn-sm" href="<?= base_url('data/edit/' . $value['id'])?>"><i class="fa fa-edit"></i></a> -->
-                        <!-- <a href="<?= base_url('data/print/' . $value['id']) ?>" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-scroll"></i></a> -->
+                        <a class="btn btn-warning btn-sm" href="<?= base_url('kategori/edit/' . $value['id']) ?>"><i class="fas fa-edit"></i></a>
                         <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id']  ?>"><i class="fa fa-trash"></i></button>
                         </td>
                       </tr>

@@ -108,8 +108,15 @@ class Pengelolaan extends BaseController
 public function update($id)
 {
     if ($this->validate([
-        'kondisi' => [
-            'label' => 'Kondisi Barang',
+        // 'kondisi' => [
+        //     'label' => 'Kondisi Barang',
+        //     'rules' => 'required',
+        //     'errors' => [
+        //         'required' => '{field} Wajib diisi!'
+        //     ]
+        // ],
+        'status_barang' => [
+            'label' => 'Keterangan',
             'rules' => 'required',
             'errors' => [
                 'required' => '{field} Wajib diisi!'
@@ -134,6 +141,7 @@ public function update($id)
         $data = [
             'id' => $id,
             'kondisi' => $this->request->getPost('kondisi'),
+            'status_barang' => $this->request->getPost('status_barang'),
             'tgl_barang_keluar' => $this->request->getPost('tgl_barang_keluar'),
             'catatan' => $this->request->getPost('catatan'),
         ];

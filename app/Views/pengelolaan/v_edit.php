@@ -194,10 +194,19 @@
 
                             <div class="form-group">
                                 <label>Kondisi Barang</label>
-                                <select class="form-control select2" name="kondisi" required>
+                                <select class="form-control select2" name="kondisi">
                                     <option value="">--Pilih Kondisi--</option>
                                     <option value="2">Rusak</option>
                                     <option value="3">Tidak Digunakan</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Keterangan</label>
+                                <select class="form-control select2" name="status_barang" required>
+                                    <option value="">--Pilih Keterangan--</option>
+                                    <option value="1">Ada</option>
+                                    <option value="2">Dipinjam</option>
                                 </select>
                             </div>
 

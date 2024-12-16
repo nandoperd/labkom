@@ -202,7 +202,7 @@
                         <td><?= $value['nama'] ?></td>
                         <td><?= $value['kepala_lab'] ?></td>
                         <td class="text-center">
-                        <!-- <a class="btn btn-warning btn-sm" href="<?= base_url('data/edit/' . $value['id'])?>"><i class="fa fa-edit"></i></a> -->
+                        <a class="btn btn-warning btn-sm" href="<?= base_url('labkom/edit/' . $value['id']) ?>"><i class="fas fa-edit"></i></a>
                         <a href="<?= base_url('labkom/detail/' . $value['id']) ?>" class="btn btn-primary btn-sm"><i class="fas fa-info-circle"></i></a>
                         <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id']  ?>"><i class="fa fa-trash"></i></button>
                         </td>

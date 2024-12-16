@@ -53,7 +53,7 @@ class Kategori extends BaseController
     public function edit($id)
     {
         $data = [
-            'title' => 'Edit Data Labkom',
+            'title' => 'Edit Data Kategori',
             'data' => $this->ModelKategori->allData(),
             'd' => $this->ModelKategori->detailData($id)
         ];
@@ -63,8 +63,8 @@ class Kategori extends BaseController
     public function update($id)
     {
         if ($this->validate([
-            'nama' => [
-                'label' => 'Nama',
+            'nama_kategori_barang' => [
+                'label' => 'Nama Kategori',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Wajib diisi!'
@@ -73,14 +73,14 @@ class Kategori extends BaseController
         ])) {
             $data = array(
                 'id' => $id,
-                'nama' => $this->request->getPost('nama'),
+                'nama_kategori_barang' => $this->request->getPost('nama_kategori_barang'),
             );
             $this->ModelKategori->edit($data);
             session()->setFlashdata('pesan', 'Data berhasil diubah');
-            return redirect()->to(base_url('data'));
+            return redirect()->to(base_url('kategori'));
         } else {
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('data/edit/' . $id));
+            return redirect()->to(base_url('kategori/edit/' . $id));
         }
     }
 

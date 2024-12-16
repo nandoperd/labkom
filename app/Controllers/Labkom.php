@@ -72,7 +72,14 @@ class Labkom extends BaseController
     {
         if ($this->validate([
             'nama' => [
-                'label' => 'Nama',
+                'label' => 'Nama Labkom',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib diisi!'
+                ]
+            ],
+            'kepala_lab' => [
+                'label' => 'Kepala Lab',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Wajib diisi!'
@@ -82,13 +89,14 @@ class Labkom extends BaseController
             $data = array(
                 'id' => $id,
                 'nama' => $this->request->getPost('nama'),
+                'kepala_lab' => $this->request->getPost('kepala_lab'),
             );
             $this->ModelLabkom->edit($data);
             session()->setFlashdata('pesan', 'Data berhasil diubah');
-            return redirect()->to(base_url('data'));
+            return redirect()->to(base_url('labkom'));
         } else {
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('data/edit/' . $id));
+            return redirect()->to(base_url('labkom/edit/' . $id));
         }
     }
 
