@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data Barang</title>
+  <title>Edit Data Barang</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -160,74 +160,56 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Data Barang</h1>
+                <h1> Edit Data Barang</h1>
               </div>
-              <div class="col-sm-6 text-right">
-                        <button class="btn bg-gradient-success" data-toggle="modal" data-target="#add"><i class="fas fa-plus"></i> Tambah Data</button>
-                    </div>
             </div>
           </div><!-- /.container-fluid -->
         </section>
 
         <!-- Main content -->
         <section class="content">
-          <div class="container-fluid">
+        <div class="container-fluid">
             <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="table-responsive">
-                    <table id="example1" class="table table-bordered table-striped">
-                    <?php
-                    if (session()->getFlashdata('pesan')) {
-                        echo '<div class="alert alert-success" role="alert">';
-                        echo session()->getFlashdata('pesan');
-                        echo '</div>';
-                    }
-                    ?>
-                      <thead>
-                      <tr>
-                        <th class="text-center">No</th>
-                        <th>Kategori</th>
-                        <th>Nama</th>
-                        <th>Kode Barang</th>
-                        <th>Harga</th>
-                        <th>Foto</th>
-                        <th class="text-center">Aksi</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                        <?php
-                        $no = 1;
-                        foreach ($d as $key => $value) { ?>
-                      <tr>
-                        <td class="text-center"><?= $no++ ?></td>
-                        <td><?= $value['kategori_nama'] ?></td>
-                        <td><?= $value['nama_barang'] ?></td>
-                        <td><?= $value['kode_barang'] ?></td>
-                        <td><?= $value['harga'] ?></td>
-                        <td><img src="<?= base_url('foto/' . $value['foto']) ?>" class="img-circle" width="35px" height="35px"></td>
-                        <td class="text-center">
-                        <a class="btn btn-warning btn-sm" href="<?= base_url('barang/edit/' . $value['id'])?>"><i class="fa fa-edit"></i></a>
-                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id']  ?>"><i class="fa fa-trash"></i></button>
-                        </td>
-                      </tr>
-                      <?php } ?>
-                      </tfoot>
-                    </table>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <?php
+                            if (session()->getFlashdata('pesan')) {
+                                echo '<div class="alert alert-success" role="alert">';
+                                echo session()->getFlashdata('pesan');
+                                echo '</div>';
+                            }
+                            if (session()->getFlashdata('errors')) {
+                                echo '<div class="alert alert-danger" role="alert">';
+                                echo '<ul>';
+                                foreach (session()->getFlashdata('errors') as $error) {
+                                    echo '<li>' . $error . '</li>';
+                                }
+                                echo '</ul>';
+                                echo '</div>';
+                            }
+                            ?>
+                            
+                            <?php echo form_open('kategori/update/' . $d['id']); ?>
+
+                            <div class="form-group">
+                                <label>Nama Kategori</label>
+                                <input name="nama_kategori_barang" class="form-control" value="<?= $d['nama_kategori_barang'] ?>" required>
+                            </div>
+
+                            <div class="form-footer">
+                                <button type="submit" class="btn btn-success">Update</button>
+                                <a href="<?= base_url('kategori') ?>" class="btn btn-danger">Kembali</a>
+                            </div>
+
+                            <?php echo form_close(); ?>
+                        </div>
                     </div>
-                  </div>
-                  <!-- /.card-body -->
                 </div>
-                <!-- /.card -->
-              </div>
-              <!-- /.col -->
             </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.container-fluid -->
+        </div>
         </section>
-        <!-- /.content -->
+
       </div>
       <!-- /.content-wrapper -->
       <footer class="main-footer">
@@ -244,81 +226,6 @@
       <!-- /.control-sidebar -->
     </div>
 <!-- ./wrapper -->
-
-<!-- Modal Add -->
-<div class="modal fade" id="add">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header d-flex justify-content-between align-items-center">
-                <h4 class="modal-title font-weight-bold ml-auto">Tambah Data Barang</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-            <?php
-echo form_open('barang/add', ['enctype' => 'multipart/form-data']);
-?>
-
-                <div class="form-group">
-                    <label>Kategori Barang</label>
-                    <select name="id_kategori_barang" class="form-control select2" style="width: 100%;">
-                        <option value="">--Pilih kategori Barang--</option>
-                        <?php foreach ($kategori as $key => $value) { ?>
-                            <option value="<?= $value['id'] ?>"><?= $value['nama_kategori_barang'] ?></option>
-                        <?php } ?>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Nama Barang</label>
-                    <input name="nama_barang" class="form-control" placeholder="Nama Barang.." required>
-                </div>
-
-                <div class="form-group">
-                    <label>Kode Barang</label>
-                    <input name="kode_barang" class="form-control" placeholder="Kode Barang.." required>
-                </div>
-
-                <div class="form-group">
-                    <label>Foto Barang</label>
-                    <input type="file" name="foto" class="form-control" required>
-                </div>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
-                <button type="submit" class="btn btn-success">Simpan</button>
-            </div>
-            <?php echo form_close() ?>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
-<!-- /.modal add -->
-
-<!-- modal delete -->
-<?php foreach ($d as $key => $value) { ?>
-        <div class="modal fade" id="delete<?= $value['id'] ?>">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-
-                        Apakah anda yakin ingin menghapus data <b><?= $value['nama_barang'] ?>?</b>
-
-                    </div>
-                    <div class="modal-footer">
-                      <a href="<?= base_url('barang/delete/' . $value['id']) ?>" class="btn btn-success">Hapus</a>
-                        <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Tutup</button>
-                    </div>
-                </div>
-                <!-- /.modal-content -->
-            </div>
-            <!-- /.modal-dialog -->
-        </div>
-        <!-- /.modal -->
-    <?php } ?>
 
 <!-- scripts -->
 <!-- jQuery -->
